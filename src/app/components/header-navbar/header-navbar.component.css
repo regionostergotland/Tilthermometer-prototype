@@ -1,0 +1,48 @@
+    mat-toolbar {
+        background-color: #0066B3;
+        color: #FFFFFF;
+        display: flex;
+        flex-direction: row;
+    }
+    
+    mat-toolbar mat-icon {
+        font-size: 3rem;
+        width: 3rem;
+        height: 3rem;
+        cursor: pointer;
+    }
+    
+    .spacer {
+        flex: 1 1 auto;
+    }
+    
+    .circle-class {
+        border-radius: 100%;
+        background: #FFFFFF;
+        color: #004894;
+        height: 50px;
+        width: 50px;
+    }
+    
+    .circle-class h2 {
+        line-height: 50px;
+        text-align: center;
+    }
+    
+    #menu {
+        float: left;
+        transition: 0.5s;
+    }
+    
+    #menu:hover {
+        transform: rotate(90deg);
+    }
+    
+    #notification {
+        float: right;
+        margin-right: 2%;
+    }
+    
+    #user {
+        float: right;
+    }

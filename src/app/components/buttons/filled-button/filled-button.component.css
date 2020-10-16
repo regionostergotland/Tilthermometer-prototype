@@ -1,0 +1,19 @@
+button {
+    background: #1688D7;
+    color: #FFFFFF;
+    width: 25vmin;
+    height: 6vmin;
+    border-radius: 4px 4px;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+}
+
+
+/*
+    color: #1688D7;
+    background: #FFFFFF;
+    border: 3px solid #1688D7;
+    border-radius: 4px 4px;
+    width: 20vmin;
+    height: 7.5vmin;
+*/

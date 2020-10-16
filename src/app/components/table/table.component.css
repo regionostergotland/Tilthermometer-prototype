@@ -1,0 +1,30 @@
+table {
+    width: 100%;
+}
+
+table ng-container td,
+table-ng-container th {
+    border: none !important;
+}
+
+.mat-cell {
+    color: #004894
+}
+
+.mat-header-cell {
+    color: #004894;
+    font-size: 1.4rem;
+}
+
+.large-btn {
+    width: 162px;
+    height: 36px;
+    border-radius: 8px;
+    line-height: 100%;
+}
+
+#statsButton {
+    background: #E3F2FB;
+    color: #004894;
+    border-color: #E3F2FB;
+}
