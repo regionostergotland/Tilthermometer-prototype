@@ -23,11 +23,7 @@ import { StaticSideNavbarComponent } from './components/static-side-navbar/stati
 import { SmallCardComponent } from './components/small-card/small-card.component';
 import { LogOutPageComponent } from './containers/log-out-page/log-out-page.component';
 import { StatsDepPageComponent } from './containers/stats-dep-page/stats-dep-page.component';
-import { InputAComponent } from './components/inputs/input-a/input-a.component';
-import { InputBComponent } from './components/inputs/input-b/input-b.component';
-import { InputCComponent } from './components/inputs/input-c/input-c.component';
-import { InputDComponent } from './components/inputs/input-d/input-d.component';
-import { InputEComponent } from './components/inputs/input-e/input-e.component';
+import { InputComponent } from './components/input/input.component';
 
 @NgModule({
   declarations: [
@@ -47,11 +43,7 @@ import { InputEComponent } from './components/inputs/input-e/input-e.component';
     SmallCardComponent,
     LogOutPageComponent,
     StatsDepPageComponent,
-    InputAComponent,
-    InputBComponent,
-    InputCComponent,
-    InputDComponent,
-    InputEComponent
+    InputComponent
   ],
   imports: [
     BrowserModule,

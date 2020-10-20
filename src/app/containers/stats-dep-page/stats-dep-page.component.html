@@ -2,34 +2,70 @@
     <h1>Statistik Avdelning 9</h1>
     <h2>2020-09-02</h2>
     <div id="contentContainer">
-        <div id="leftContainer"></div>
+        <div id="leftContainer">
+            <div style="flex: 2 2 100px"></div>
+            <app-small-card content="Enligt rekommendationer" textColor="#FFFFFF" backgroundColor="#43A4E7" borderColor="#43A4E7" id="firstBoxHeader"></app-small-card>
+            <app-small-card content="Vårdbelastning" textColor="#FFFFFF" backgroundColor="#1688D7" borderColor="#1688D7" id="secondBoxHeader"></app-small-card>
+            <app-small-card content="C" textColor="#FFFFFF" backgroundColor="#D3AB00" borderColor="#D3AB00" id="thirdBoxHeader"></app-small-card>
+            <app-small-card content="D" textColor="#FFFFFF" backgroundColor="#F5911B" borderColor="#F5911B" id="fourthBoxHeader"></app-small-card>
+            <app-small-card content="E" textColor="#FFFFFF" backgroundColor="#D83000" borderColor="#D83000" id="fifthBoxHeader"></app-small-card>
+        </div>
         <div id="rightContainer">
             <div id="header">
-                <div id="firstHeaderBox" class="headerBox"></div>
-                <div id="secondHeaderBox" class="headerBox"></div>
-                <div id="thirdHeaderBox" class="headerBox"></div>
-                <div id="fourthHeaderBox" class="headerBox"></div>
-                <div id="fifthHeaderBox" class="headerBox"></div>
+                <div id="firstHeaderBox" class="headerBox">
+                    <h2>1</h2>
+                    <p>Elektrisk höj- och sänkbar säng</p>
+                    <p>Grid- och annan förflyttnings utrustning</p>
+                </div>
+                <div id="secondHeaderBox" class="headerBox">
+                    <h2>2</h2>
+                    <p>Stå- eller uppresningslyft</p>
+                    <p>Mobil- eller taklyft</p>
+                </div>
+                <div id="thirdHeaderBox" class="headerBox">
+                    <h2>3</h2>
+                    <p>På- och avtagning av stödstrumpor</p>
+                </div>
+                <div id="fourhtHeaderBox" class="headerBox">
+                    <h2>4a</h2>
+                    <p>Höj- och sänkbar sittutrustning</p>
+                </div>
+                <div id="fifthHeaderBox" class="headerBox">
+                    <h2>4b</h2>
+                    <p>Höj- och sänkbar liggutrustning</p>
+                </div>
             </div>
             <div id="recommendations">
-                <app-hollow-button [buttonText]="Test"></app-hollow-button>
-                <app-hollow-button [buttonText]="Test"></app-hollow-button>
-                <app-hollow-button [buttonText]="Test"></app-hollow-button>
-                <app-hollow-button [buttonText]="Test"></app-hollow-button>
-                <app-hollow-button [buttonText]="Test"></app-hollow-button>
-                <app-hollow-button [buttonText]="Test"></app-hollow-button>
-                <app-hollow-button [buttonText]="Test"></app-hollow-button>
+                <app-small-card content=80% textColor="#43A4E7" borderColor="#43A4E7" id="firstRecCard"></app-small-card>
+                <app-small-card content=10% textColor="#43A4E7" borderColor="#43A4E7" id="secondRecCard"></app-small-card>
+                <app-small-card content=0% textColor="#43A4E7" borderColor="#43A4E7" id="thirdRecCard"></app-small-card>
+                <app-small-card content=67% textColor="#43A4E7" borderColor="#43A4E7" id="fourthRecCard"></app-small-card>
+                <app-small-card content=83% textColor="#43A4E7" borderColor="#43A4E7" id="fiveRecCard"></app-small-card>
+                <app-small-card content=17% textColor="#43A4E7" borderColor="#43A4E7" id="sixRecCard"></app-small-card>
+                <app-small-card content=40% textColor="#43A4E7" borderColor="#43A4E7" id="sevenRecCard"></app-small-card>
             </div>
             <div id="careStrain">
-                <app-hollow-button id="firstCareBtn" [buttonText]="Strain"></app-hollow-button>
-                <app-hollow-button id="secondCareBtn" [buttonText]="Strain"></app-hollow-button>
-                <app-hollow-button [buttonText]="Strain"></app-hollow-button>
-                <app-hollow-button [buttonText]="Strain"></app-hollow-button>
-                <app-hollow-button [buttonText]="Strain"></app-hollow-button>
+                <app-small-card content=44% textColor="#1688D7" borderColor="#1688D7" id="firstCareCard"></app-small-card>
+                <app-small-card content=11% textColor="#1688D7" borderColor="#1688D7" id="secondCareCard"></app-small-card>
+                <app-small-card content=54% textColor="#1688D7" borderColor="#1688D7" id="thirdCareCard"></app-small-card>
+                <app-small-card content=27% textColor="#1688D7" borderColor="#1688D7" id="fourthCareCard"></app-small-card>
+                <app-small-card content=4% textColor="#1688D7" borderColor="#1688D7" id="fifthCareCard"></app-small-card>
             </div>
-            <div id="cRow"></div>
-            <div id="dRow"></div>
-            <div id="eRow"></div>
+            <div id="cRow">
+                <app-small-card content=75% textColor="#D3AB00" borderColor="#D3AB00" id="firstCardC"></app-small-card>
+                <app-small-card content=25% textColor="#D3AB00" borderColor="#D3AB00" id="secondCardC"></app-small-card>
+                <app-small-card content=25% textColor="#D3AB00" borderColor="#D3AB00" id="thirdCardC"></app-small-card>
+            </div>
+            <div id="dRow">
+                <app-small-card content=80% textColor="#F5911B" borderColor="#F5911B" id="firstCardD"></app-small-card>
+                <app-small-card content=0% textColor="#F5911B" borderColor="#F5911B" id="secondCardD"></app-small-card>
+                <app-small-card content=50% textColor="#F5911B" borderColor="#F5911B" id="thirdCardD"></app-small-card>
+            </div>
+            <div id="eRow">
+                <app-small-card content=100% textColor="#D83000" borderColor="#D83000" id=" firstCardE "></app-small-card>
+                <app-small-card content=0% textColor="#D83000" borderColor="#D83000" id="secondCardE "></app-small-card>
+                <app-small-card content=100% textColor="#D83000" borderColor="#D83000" id="thirdCardE "></app-small-card>
+            </div>
         </div>
     </div>
 </div>

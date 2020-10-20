@@ -5,6 +5,7 @@ import { MenuPageComponentComponent } from './containers/menu-page-component/men
 import { StatsDepPageComponent } from './containers/stats-dep-page/stats-dep-page.component';
 import { StatsOverviewPageComponentComponent } from './containers/stats-overview-page-component/stats-overview-page-component.component';
 import { SmallCardComponent } from './components/small-card/small-card.component';
+import { InputComponent } from './components/input/input.component';
 
 const routes: Routes = [
   {path: "", component: StatsDepPageComponent},

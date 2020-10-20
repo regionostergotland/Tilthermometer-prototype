@@ -1,0 +1,5 @@
+<div [style.border-color]="inputColor">
+    <h2 [style.color]="inputColor" id="plusHeader" (click)="add()">+</h2>
+    <input [style.color]="inputColor" type="number" max="maxValue" min="minValue" [(ngModel)]="inputNumber">
+    <h2 [style.color]="inputColor" id="minusHeader" (click)="subtract()">-</h2>
+</div>

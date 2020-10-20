@@ -6,7 +6,10 @@ import { Component, Input, OnInit } from '@angular/core';
   styleUrls: ['./small-card.component.css']
 })
 export class SmallCardComponent implements OnInit {
-  @Input() public percentage: number;
+  @Input() public content: string;
+  @Input() public textColor: string;
+  @Input() public borderColor: string;
+  @Input() public backgroundColor: string = "#FFFFFF";
   constructor() { }
 
   ngOnInit(): void {
