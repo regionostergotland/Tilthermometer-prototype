@@ -1,40 +1,4 @@
-    mat-sidenav-container {
-        height: 100%;
-    }
-    
-    mat-sidenav-content {
-        background: #FFFFFF;
-        color: #0066B3;
-        overflow-x: hidden;
-    }
-    
-    mat-sidenav {
-        background: #FFFFFF;
-        color: #0066B3;
-        width: 20%;
-        border-right: 2px solid gray;
-        margin: 0;
-        padding: 0;
-    }
-    
-    mat-sidenav ul {
-        font-size: 2rem;
-        list-style-type: none;
-    }
-    
-    mat-sidenav ul li {
-        width: 100%;
-        margin-bottom: 10%;
-        border-bottom: 2px solid gray;
-    }
-    
-    mat-sidenav ul li mat-icon {
-        line-height: 100%;
-        margin-right: 5%;
-    }
-    
-    mat-sidenav ul li a {
-        color: #0066B3;
-        text-decoration: none;
-        line-height: 100%;
-    }
+.mainContainer {
+    display: flex;
+    flex-direction: row;
+}

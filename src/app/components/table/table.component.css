@@ -1,19 +1,17 @@
 table {
     width: 100%;
-}
-
-table ng-container td,
-table-ng-container th {
-    border: none !important;
+    height: 80%;
 }
 
 .mat-cell {
-    color: #004894
+    color: #004894;
+    border: none;
 }
 
 .mat-header-cell {
     color: #004894;
     font-size: 1.4rem;
+    border: none;
 }
 
 .large-btn {

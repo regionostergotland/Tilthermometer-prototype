@@ -1,44 +1,5 @@
-<mat-sidenav-container>
-    <mat-sidenav [(opened)]="showSideNav" (click)="toggleShowSideNav()">
-        <ul>
-            <li>
-                <mat-icon>home</mat-icon>
-                <a href="#">Hem</a>
-            </li>
-            <li>
-                <mat-icon>edit</mat-icon>
-                <a href="#">Skapa riskbedömning</a>
-            </li>
-            <li>
-                <mat-icon>insert_chart_outlined</mat-icon>
-                <a href="#">Statistik</a>
-            </li>
-            <li>
-                <mat-icon>history</mat-icon>
-                <a href="#">Historik</a>
-            </li>
-            <li>
-                <mat-icon>info</mat-icon>
-                <a href="#">Rum</a>
-            </li>
-            <li>
-                <mat-icon>menu_book</mat-icon>
-                <a href="#">Manual</a>
-            </li>
-        </ul>
-    </mat-sidenav>
-    <mat-sidenav-content>
-        <router-outlet>
-            <app-header-navbar (eventEmitter)="showSideNav=$event"></app-header-navbar>
-            <app-hollow-button [buttonText]="buttonText"></app-hollow-button>
-            <hr>
-            <app-filled-button [buttonText]="buttonText"></app-filled-button>
-            <hr>
-            <app-trash-button></app-trash-button>
-            <hr>
-            <app-light-button [buttonText]="buttonText"></app-light-button>
-            <hr>
-            <app-danger-button [buttonText]="buttonText"></app-danger-button>
-        </router-outlet>
-    </mat-sidenav-content>
-</mat-sidenav-container>
+<app-header-navbar (eventEmitter)="showSideNav=$event"></app-header-navbar>
+<div class="mainContainer">
+    <app-static-side-navbar [showFull]="showSideNav"></app-static-side-navbar>
+    <router-outlet></router-outlet>
+</div>

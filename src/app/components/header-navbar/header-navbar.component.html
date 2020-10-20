@@ -3,6 +3,12 @@
     <span class="spacer"></span>
     <mat-icon id="notification">notification_important</mat-icon>
     <div id="user" class="circle-class">
-        <h2>AM</h2>
+        <h2 (click)="toggleShowUserInfo()">AM</h2>
     </div>
 </mat-toolbar>
+<div id="userInfo" [class.hide]="!showUserInfo">
+    <h4>Kardiologen - Avdelning 9</h4>
+    <h1>Alice Malmberg</h1>
+    <h3>Skyddsombud</h3>
+    <app-filled-button [buttonText]=" text "></app-filled-button>
+</div>

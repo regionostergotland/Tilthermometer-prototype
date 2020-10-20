@@ -8,32 +8,50 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppComponent } from './app.component';
 import { MaterialModule } from './material/material.module';
 
-import { CardComponent } from './components/card/card.component';
+import { LargeCardComponent } from './components/large-card/large-card.component';
 import { HeaderNavBarComponent } from './components/header-navbar/header-navbar.component';
 import { InfoBarComponent } from './components/info-bar/info-bar.component';
 import { MenuPageComponentComponent } from './containers/menu-page-component/menu-page-component.component';
-import { StatisticsPageComponentComponent } from './containers/statistics-page-component/statistics-page-component.component';
+import { StatsOverviewPageComponentComponent } from './containers/stats-overview-page-component/stats-overview-page-component.component';
 import { TableComponent } from './components/table/table.component';
 import { FilledButtonComponent } from './components/buttons/filled-button/filled-button.component';
 import { TrashButtonComponent } from './components/buttons/trash-button/trash-button.component';
 import { HollowButtonComponent } from './components/buttons/hollow-button/hollow-button.component';
 import { LightButtonComponent } from './components/buttons/light-button/light-button.component';
 import { DangerButtonComponent } from './components/buttons/danger-button/danger-button.component';
+import { StaticSideNavbarComponent } from './components/static-side-navbar/static-side-navbar.component';
+import { SmallCardComponent } from './components/small-card/small-card.component';
+import { LogOutPageComponent } from './containers/log-out-page/log-out-page.component';
+import { StatsDepPageComponent } from './containers/stats-dep-page/stats-dep-page.component';
+import { InputAComponent } from './components/inputs/input-a/input-a.component';
+import { InputBComponent } from './components/inputs/input-b/input-b.component';
+import { InputCComponent } from './components/inputs/input-c/input-c.component';
+import { InputDComponent } from './components/inputs/input-d/input-d.component';
+import { InputEComponent } from './components/inputs/input-e/input-e.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    CardComponent,
+    LargeCardComponent,
     HeaderNavBarComponent,
     InfoBarComponent,
     MenuPageComponentComponent,
-    StatisticsPageComponentComponent,
+    StatsOverviewPageComponentComponent,
     TableComponent,
     FilledButtonComponent,
     TrashButtonComponent,
     HollowButtonComponent,
     LightButtonComponent,
-    DangerButtonComponent
+    DangerButtonComponent,
+    StaticSideNavbarComponent,
+    SmallCardComponent,
+    LogOutPageComponent,
+    StatsDepPageComponent,
+    InputAComponent,
+    InputBComponent,
+    InputCComponent,
+    InputDComponent,
+    InputEComponent
   ],
   imports: [
     BrowserModule,

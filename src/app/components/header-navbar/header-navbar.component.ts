@@ -8,14 +8,21 @@ import { Component, OnInit, EventEmitter, Output } from '@angular/core';
 export class HeaderNavBarComponent implements OnInit {
   @Output() eventEmitter = new EventEmitter();
   public showSideNav: boolean = false;
+  public text: string = 'Logga ut';
+  public showUserInfo: boolean = false;
   constructor() { }
 
   ngOnInit(): void {
   }
 
-  toggleSideNav() {
+  toggleSideNav(): void {
     this.showSideNav =! this.showSideNav; 
     this.eventEmitter.emit(this.showSideNav);
+   }
+
+   toggleShowUserInfo(): void {
+     this.showUserInfo =! this.showUserInfo;
+     console.log(this.showUserInfo);
    }
 
 }

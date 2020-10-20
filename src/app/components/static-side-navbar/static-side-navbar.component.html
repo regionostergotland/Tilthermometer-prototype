@@ -1,0 +1,16 @@
+<div id="side-navbar">
+    <ul>
+        <li>
+            <mat-icon (click)=toggleSideNav()>home</mat-icon><a href="" [class.text]="!showFull">Hem</a></li>
+        <li>
+            <mat-icon (click)=toggleSideNav()>edit</mat-icon><a href="" [class.text]="!showFull">Skapa riskbedöming</a></li>
+        <li>
+            <mat-icon (click)=toggleSideNav()>insert_chart_outlined</mat-icon><a href="" [class.text]="!showFull">Statistik</a></li>
+        <li>
+            <mat-icon (click)=toggleSideNav()>history</mat-icon><a href="" [class.text]="!showFull">Historik</a></li>
+        <li>
+            <mat-icon (click)=toggleSideNav()>info</mat-icon><a href="" [class.text]="!showFull">Information</a></li>
+        <li>
+            <mat-icon (click)=toggleSideNav()>menu_book</mat-icon><a href="" [class.text]="!showFull">Manual</a></li>
+    </ul>
+</div>

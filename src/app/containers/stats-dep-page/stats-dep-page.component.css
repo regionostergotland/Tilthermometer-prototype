@@ -1,0 +1,88 @@
+#mainContainer {
+    width: 80vw;
+    height: 90vh;
+    border: 1px solid black;
+}
+
+h1,
+h2 {
+    color: #004894;
+    margin-left: 2.5vw;
+    margin-top: 2.5vh;
+}
+
+#contentContainer {
+    display: flex;
+    justify-self: stretch;
+    align-items: stretch;
+    flex-direction: row;
+    height: 82.5%;
+    border: 1px solid green;
+}
+
+#leftContainer {
+    flex: 1 1 100px;
+    border: 1px solid brown;
+}
+
+#rightContainer {
+    border: 5px solid pink;
+    flex: 4 1 400px;
+    min-height: 100%;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+    align-items: stretch;
+}
+
+#header {
+    flex: 1 1 100px;
+    display: flex;
+    justify-content: stretch;
+    align-items: stretch;
+    flex-direction: row;
+    border: 3px solid red;
+}
+
+.headerBox {
+    border: 2px solid yellow;
+}
+
+#firstHeaderBox {
+    flex: 2 2 100px;
+}
+
+#secondHeaderBox {
+    flex: 2 2 100px;
+}
+
+#thirdHeaderBox {
+    flex: 1 1 50px;
+}
+
+#fourthHeaderBox {
+    flex: 1 1 50px;
+}
+
+#fifthHeaderBox {
+    flex: 1 1 50px;
+}
+
+#recommendations {
+    flex: 1 1 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    border: 2px solid teal;
+}
+
+#careStrain {
+    flex: 1 1 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    border: 2px solid indigo;
+}

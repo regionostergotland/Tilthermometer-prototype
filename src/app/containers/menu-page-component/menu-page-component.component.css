@@ -1,16 +1,16 @@
 div {
-    height: 100vh;
-    background: #FFFFFF;
-    display: grid;
-    grid-template-columns: repeat(10, 1fr);
+    margin-left: 2.5vw;
+    width: 75vw;
+    height: 90vh;
+    background: red;
+    border: 3px solid darkgray;
 }
 
 #infoCard {
     margin-top: 2.5vh;
-    grid-column: 4;
+    ;
 }
 
 #makeCard {
     margin-top: 2.5vh;
-    grid-column: 7;
 }
