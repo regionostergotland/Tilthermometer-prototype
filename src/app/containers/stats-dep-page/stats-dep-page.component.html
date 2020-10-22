@@ -1,14 +1,14 @@
 <div id="mainContainer">
-    <h1>Statistik Avdelning 9</h1>
-    <h2>2020-09-02</h2>
+    <h1 class="primaryDarkColor">Statistik Avdelning 9</h1>
+    <h2 class="primaryDarkColor">2020-09-02</h2>
     <div id="contentContainer">
         <div id="leftContainer">
-            <div style="flex: 2 2 100px"></div>
-            <app-small-card content="Enligt rekommendationer" textColor="#FFFFFF" backgroundColor="#43A4E7" borderColor="#43A4E7" id="firstBoxHeader"></app-small-card>
-            <app-small-card content="Vårdbelastning" textColor="#FFFFFF" backgroundColor="#1688D7" borderColor="#1688D7" id="secondBoxHeader"></app-small-card>
-            <app-small-card content="C" textColor="#FFFFFF" backgroundColor="#D3AB00" borderColor="#D3AB00" id="thirdBoxHeader"></app-small-card>
-            <app-small-card content="D" textColor="#FFFFFF" backgroundColor="#F5911B" borderColor="#F5911B" id="fourthBoxHeader"></app-small-card>
-            <app-small-card content="E" textColor="#FFFFFF" backgroundColor="#D83000" borderColor="#D83000" id="fifthBoxHeader"></app-small-card>
+            <div></div>
+            <app-card id="firstBoxHeader" content="Enligt rekommendationer" class="primary400Border primary400Back whiteColor"></app-card>
+            <app-card id="secondBoxHeader" content="Vårdbelastning" class="primary600Border primary600Back whiteColor"></app-card>
+            <app-card id="thirdBoxHeader" content="C" class="CBack CBorder whiteColor"></app-card>
+            <app-card id="fourthBoxHeader" content="D" class="DBack DBorder whiteColor"></app-card>
+            <app-card id="fifthBoxHeader" content="E" class="EBack EBorder whiteColor"></app-card>
         </div>
         <div id="rightContainer">
             <div id="header">
@@ -36,35 +36,35 @@
                 </div>
             </div>
             <div id="recommendations">
-                <app-small-card content=80% textColor="#43A4E7" borderColor="#43A4E7" id="firstRecCard"></app-small-card>
-                <app-small-card content=10% textColor="#43A4E7" borderColor="#43A4E7" id="secondRecCard"></app-small-card>
-                <app-small-card content=0% textColor="#43A4E7" borderColor="#43A4E7" id="thirdRecCard"></app-small-card>
-                <app-small-card content=67% textColor="#43A4E7" borderColor="#43A4E7" id="fourthRecCard"></app-small-card>
-                <app-small-card content=83% textColor="#43A4E7" borderColor="#43A4E7" id="fiveRecCard"></app-small-card>
-                <app-small-card content=17% textColor="#43A4E7" borderColor="#43A4E7" id="sixRecCard"></app-small-card>
-                <app-small-card content=40% textColor="#43A4E7" borderColor="#43A4E7" id="sevenRecCard"></app-small-card>
+                <app-card id="firstRecCard" class="whiteBack primary400Color primary400Border" content=80%></app-card>
+                <app-card id="secondRecCard" class="whiteBack primary400Color primary400Border" content=10%></app-card>
+                <app-card id="thirdRecCard" class="whiteBack primary400Color primary400Border" content=0%></app-card>
+                <app-card id="fourthRecCard" class="whiteBack primary400Color primary400Border" content=67%></app-card>
+                <app-card id="fiveRecCard" class="whiteBack primary400Color primary400Border" content=83%></app-card>
+                <app-card id="sixRecCard" class="whiteBack primary400Color primary400Border" content=17%></app-card>
+                <app-card id="sevenRecCard" class="whiteBack primary400Color primary400Border" content=40%></app-card>
             </div>
             <div id="careStrain">
-                <app-small-card content=44% textColor="#1688D7" borderColor="#1688D7" id="firstCareCard"></app-small-card>
-                <app-small-card content=11% textColor="#1688D7" borderColor="#1688D7" id="secondCareCard"></app-small-card>
-                <app-small-card content=54% textColor="#1688D7" borderColor="#1688D7" id="thirdCareCard"></app-small-card>
-                <app-small-card content=27% textColor="#1688D7" borderColor="#1688D7" id="fourthCareCard"></app-small-card>
-                <app-small-card content=4% textColor="#1688D7" borderColor="#1688D7" id="fifthCareCard"></app-small-card>
+                <app-card id="firstCareCard" content=44% class="whiteBack primary600Border primary600Color"></app-card>
+                <app-card id="secondCareCard" content=11% class="whiteBack primary600Border primary600Color"></app-card>
+                <app-card id="thirdCareCard" content=54% class="whiteBack primary600Border primary600Color"></app-card>
+                <app-card id="fourthCareCard" content=27% class="whiteBack primary600Border primary600Color"></app-card>
+                <app-card id="fifthCareCard" content=4% class="whiteBack primary600Border primary600Color"></app-card>
             </div>
             <div id="cRow">
-                <app-small-card content=75% textColor="#D3AB00" borderColor="#D3AB00" id="firstCardC"></app-small-card>
-                <app-small-card content=25% textColor="#D3AB00" borderColor="#D3AB00" id="secondCardC"></app-small-card>
-                <app-small-card content=25% textColor="#D3AB00" borderColor="#D3AB00" id="thirdCardC"></app-small-card>
+                <app-card id="firstCardC" content=75% class="whiteBack CBorder CColor"></app-card>
+                <app-card id="secondCardC" content=25% class="whiteBack CBorder CColor"></app-card>
+                <app-card id="thirdCardC" content=25% class="whiteBack CBorder CColor"></app-card>
             </div>
             <div id="dRow">
-                <app-small-card content=80% textColor="#F5911B" borderColor="#F5911B" id="firstCardD"></app-small-card>
-                <app-small-card content=0% textColor="#F5911B" borderColor="#F5911B" id="secondCardD"></app-small-card>
-                <app-small-card content=50% textColor="#F5911B" borderColor="#F5911B" id="thirdCardD"></app-small-card>
+                <app-card id="firstCardD" content=80% class="whiteBack DBorder DColor"></app-card>
+                <app-card id="secondCardD" content=0% class="whiteBack DBorder DColor"></app-card>
+                <app-card id="thirdCardD" content=50% class="whiteBack DBorder DColor"></app-card>
             </div>
             <div id="eRow">
-                <app-small-card content=100% textColor="#D83000" borderColor="#D83000" id=" firstCardE "></app-small-card>
-                <app-small-card content=0% textColor="#D83000" borderColor="#D83000" id="secondCardE "></app-small-card>
-                <app-small-card content=100% textColor="#D83000" borderColor="#D83000" id="thirdCardE "></app-small-card>
+                <app-card id="firstCardE" content=100% class="whiteBack EBorder EColor"></app-card>
+                <app-card id="secondCardE" content=0% class="whiteBack EBorder EColor"></app-card>
+                <app-card id="thirdCardE" content=100% class="whiteBack EBorder EColor"></app-card>
             </div>
         </div>
     </div>

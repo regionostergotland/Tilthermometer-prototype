@@ -1,0 +1,87 @@
+    mat-toolbar {
+        background-color: #0066B3;
+        color: #FFFFFF;
+        display: flex;
+        flex-direction: row;
+        height: 10vh;
+    }
+    
+    mat-toolbar mat-icon {
+        font-size: 3rem;
+        width: 3rem;
+        height: 3rem;
+        cursor: pointer;
+    }
+    
+    .spacer {
+        flex: 1 1 auto;
+    }
+    
+    .circle-class {
+        border-radius: 100%;
+        background: #FFFFFF;
+        color: #004894;
+        height: 50px;
+        width: 50px;
+    }
+    
+    .circle-class h2 {
+        line-height: 50px;
+        text-align: center;
+    }
+    
+    #menu {
+        float: left;
+    }
+    
+    #notification {
+        float: right;
+        margin-right: 2%;
+    }
+    
+    #user {
+        float: right;
+        cursor: pointer;
+    }
+    
+    .hide {
+        visibility: hidden;
+    }
+    
+    #userInfo {
+        width: 15vw;
+        height: 45vh;
+        box-shadow: 2px 2px 16px #000000;
+        position: absolute;
+        right: 0.5%;
+        z-index: 9999;
+        background: #FFFFFF;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+    }
+    
+    #userInfo h4 {
+        text-transform: uppercase;
+        color: #0066B3;
+        margin-top: 5%;
+    }
+    
+    #userInfo h1 {
+        color: #004894;
+        text-align: left;
+        width: 80%;
+    }
+    
+    #userInfo h3 {
+        color: #0A76C5;
+        text-align: left;
+        width: 80%;
+        margin-top: -10px;
+    }
+    
+    #userInfo app-regular-button {
+        width: 80%;
+        margin-top: 65%;
+    }

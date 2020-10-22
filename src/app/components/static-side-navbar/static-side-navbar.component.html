@@ -1,16 +1,60 @@
-<div id="side-navbar">
-    <ul>
-        <li>
-            <mat-icon (click)=toggleSideNav()>home</mat-icon><a href="" [class.text]="!showFull">Hem</a></li>
-        <li>
-            <mat-icon (click)=toggleSideNav()>edit</mat-icon><a href="" [class.text]="!showFull">Skapa riskbedöming</a></li>
-        <li>
-            <mat-icon (click)=toggleSideNav()>insert_chart_outlined</mat-icon><a href="" [class.text]="!showFull">Statistik</a></li>
-        <li>
-            <mat-icon (click)=toggleSideNav()>history</mat-icon><a href="" [class.text]="!showFull">Historik</a></li>
-        <li>
-            <mat-icon (click)=toggleSideNav()>info</mat-icon><a href="" [class.text]="!showFull">Information</a></li>
-        <li>
-            <mat-icon (click)=toggleSideNav()>menu_book</mat-icon><a href="" [class.text]="!showFull">Manual</a></li>
-    </ul>
+<div id="mainCont">
+
+    <div id="side-navbar" class="primaryDefaultColor">
+        <ul>
+            <li>
+                <a routerLink="menu" routerActive="primaryDarkColor">
+                    <mat-icon>home</mat-icon>
+                </a>
+            </li>
+            <li>
+                <a>
+                    <mat-icon>edit</mat-icon>
+                </a>
+            </li>
+            <li>
+                <a routerLink="overview" routerActive="primaryDarkColor">
+                    <mat-icon>insert_chart_outlined</mat-icon>
+                </a>
+            </li>
+            <li>
+                <a routerLink="department" routerActive="primaryDarkColor">
+                    <mat-icon>history</mat-icon>
+                </a>
+            </li>
+            <li>
+                <a>
+                    <mat-icon>info</mat-icon>
+                </a>
+            </li>
+            <li>
+                <a>
+                    <mat-icon>menu_book</mat-icon>
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <div id="full-side-navbar" class="primaryLightestBorder" [class.hide]="!showFull">
+        <ul>
+            <li>
+                <h2 class="primaryDefaultColor">Hem</h2>
+            </li>
+            <li>
+                <h2 class="primaryDefaultColor">Skapa riskbedömning</h2>
+            </li>
+            <li>
+                <h2 class="primaryDefaultColor">Statistik</h2>
+            </li>
+            <li>
+                <h2 class="primaryDefaultColor">Historik</h2>
+            </li>
+            <li>
+                <h2 class="primaryDefaultColor">Information</h2>
+            </li>
+            <li>
+                <h2 class="primaryDefaultColor">Manual</h2>
+            </li>
+        </ul>
+    </div>
 </div>

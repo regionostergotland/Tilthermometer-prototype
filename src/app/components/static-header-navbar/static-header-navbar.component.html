@@ -1,0 +1,14 @@
+<mat-toolbar>
+    <mat-icon id="menu" (click)="toggleSideNav()">menu</mat-icon>
+    <span class="spacer"></span>
+    <mat-icon id="notification">notification_important</mat-icon>
+    <div id="user" class="circle-class">
+        <h2 (click)="toggleShowUserInfo()">AM</h2>
+    </div>
+</mat-toolbar>
+<div id="userInfo" [class.hide]="!showUserInfo">
+    <h4>Kardiologen - Avdelning 9</h4>
+    <h1>Alice Malmberg</h1>
+    <h3>Skyddsombud</h3>
+    <app-regular-button [btn_text]="text" btn_back="#1688D7" btn_color="#FFFFFF"></app-regular-button>
+</div>
