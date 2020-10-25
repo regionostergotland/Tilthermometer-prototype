@@ -1,2 +1,1 @@
-<button mat-flat-button [style.color]="btn_color" [style.background]="btn_back" [style.borderColor]="btn_border">
-{{ btn_text }}</button>
+<button mat-flat-button [ngStyle]="getStyle()">{{btn_text}}</button>

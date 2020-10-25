@@ -13,4 +13,12 @@ export class RegularButtonComponent implements OnInit {
 
   constructor() { }
   ngOnInit(): void { }
+
+   getStyle(): Object {
+     return {
+       backgroundColor: this.btn_back,
+       borderColor: this.btn_border,
+       color: this.btn_color
+     };
+   }
 }

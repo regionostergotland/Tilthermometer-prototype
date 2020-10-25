@@ -1,1 +1,234 @@
-<p>risk-page works!</p>
+<form id="mainContainer" [formGroup]="assessmentForm">
+    <h1 id="mainTitle" class="primaryDarkColor">Avdelning 9</h1>
+
+    <div id="titlesContainer" class="rowContainer">
+        <p style="visibility: hidden;"></p>
+        <div id="titlesSubContainer" class="rowSubContainer">
+            <app-card content="S" class="primary600Back whiteColor"></app-card>
+            <app-card content="A" class="ABack whiteColor"></app-card>
+            <app-card content="B" class="BBack whiteColor"></app-card>
+            <app-card content="C" class="CBack whiteColor"></app-card>
+            <app-card content="D" class="DBack whiteColor"></app-card>
+            <app-card content="E" class="EBack whiteColor"></app-card>
+        </div>
+    </div>
+
+    <h2 class="primaryDarkColor">1. Förflyttning i sidled, högre <br> upp i säng och vändning</h2>
+    <div class="rowContainer">
+        <p id="caretakersParagraph" class="primaryDefaultColor">Antal vårdtagare i respektive mobilitetsgrupp</p>
+        <div id="careTakersContainer" class="rowSubContainer">
+            <app-input style="visibility: hidden;"></app-input>
+            <app-input [formGroup]="assessmentForm" formName="one1a" inputColor="#82A10D"></app-input>
+            <app-input [formGroup]="assessmentForm" formName="one1b" inputColor="#B2B602"></app-input>
+            <app-input [formGroup]="assessmentForm" formName="one1c" inputColor="#D3AB00"></app-input>
+            <app-input [formGroup]="assessmentForm" formName="one1d" inputColor="#F5911B"></app-input>
+            <app-input [formGroup]="assessmentForm" formName="one1e" inputColor="#D83000"></app-input>
+        </div>
+    </div>
+
+    <div class="rowContainer">
+        <p class="primaryDefaultColor">Antal vårdtagare som har elektrisk höj- och sänkbar säng</p>
+        <div class="rowSubContainer">
+            <app-input inputColor="#1688D7" style="visibility: hidden;"></app-input>
+            <app-input [formGroup]="assessmentForm" formName="one2a" inputColor="#82A10D"></app-input>
+            <app-input [formGroup]="assessmentForm" formName="one2b" inputColor="#B2B602"></app-input>
+            <app-input [formGroup]="assessmentForm" formName="one2c" inputColor="#D3AB00"></app-input>
+            <app-input [formGroup]="assessmentForm" formName="one2d" inputColor="#F5911B"></app-input>
+            <app-input [formGroup]="assessmentForm" formName="one2e" inputColor="#D83000"></app-input>
+        </div>
+    </div>
+
+    <div class="rowContainer ">
+        <p class="primaryDefaultColor ">Antal vårdtagare där glid- och annan förflyttningsutrustning används</p>
+        <div class="rowSubContainer ">
+            <app-input style="visibility: hidden;"></app-input>
+            <app-input style="visibility: hidden;"></app-input>
+            <app-input style="visibility: hidden;"></app-input>
+            <app-input [formGroup]="assessmentForm" formName="one3c" inputColor="#D3AB00"></app-input>
+            <app-input [formGroup]="assessmentForm" formName="one3d" inputColor="#F5911B"></app-input>
+            <app-input [formGroup]="assessmentForm" formName="one3e" inputColor="#D83000"></app-input>
+        </div>
+    </div>
+
+    <hr class="primary100Border ">
+
+    <h2 class="primaryDarkColor">2. Förflyttning från och till <br> sittande - stående samt från <br> och till sittande - sittande</h2>
+    <div class="rowContainer">
+        <p class="primaryDefaultColor">Antal vårdtagare där stöd vid förflyttning krävs</p>
+        <div class="rowSubContainer">
+            <app-input style="visibility: hidden;"></app-input>
+            <app-input style="visibility: hidden;"></app-input>
+            <app-input style="visibility: hidden;"></app-input>
+            <app-input [formGroup]="assessmentForm" formName="two1c" inputColor="#D3AB00"></app-input>
+            <app-input [formGroup]="assessmentForm" formName="two1d" inputColor="#F5911B"></app-input>
+            <app-input [formGroup]="assessmentForm" formName="two1e" inputColor="#D83000"></app-input>
+        </div>
+    </div>
+
+    <div class="rowContainer">
+        <p class="primaryDefaultColor">Antal vårdtagare där stå- eller uppresningslyft används</p>
+        <div class="rowSubContainer">
+            <app-input style="visibility: hidden;"></app-input>
+            <app-input style="visibility: hidden;"></app-input>
+            <app-input style="visibility: hidden;"></app-input>
+            <app-input [formGroup]="assessmentForm" formName="two2c" inputColor="#D3AB00"></app-input>
+            <app-input style="visibility: hidden;"></app-input>
+            <app-input style="visibility: hidden;"></app-input>
+        </div>
+    </div>
+
+    <div class="rowContainer">
+        <p class="primaryDefaultColor">Antal vårdtagare där mobil- eller taklyft används</p>
+        <div class="rowSubContainer">
+            <app-input style="visibility: hidden;"></app-input>
+            <app-input style="visibility: hidden;"></app-input>
+            <app-input style="visibility: hidden;"></app-input>
+            <app-input style="visibility: hidden;"></app-input>
+            <app-input [formGroup]="assessmentForm" formName="two3d" inputColor="#F5911B"></app-input>
+            <app-input [formGroup]="assessmentForm" formName="two3e" inputColor="#D83000"></app-input>
+        </div>
+    </div>
+
+    <hr class="primary100Border">
+
+    <h2 class="primaryDarkColor">3. På- och avtagning av stödstrumpor</h2>
+    <div class="rowContainer">
+        <p class="primaryDefaultColor">Antal vårdtagare med stödstrumpor</p>
+        <div class="rowSubContainer">
+            <app-input [formGroup]="assessmentForm" formName="three1" inputColor="#1688D7"></app-input>
+            <app-input style="visibility: hidden;"></app-input>
+            <app-input style="visibility: hidden;"></app-input>
+            <app-input style="visibility: hidden;"></app-input>
+            <app-input style="visibility: hidden;"></app-input>
+            <app-input style="visibility: hidden;"></app-input>
+        </div>
+    </div>
+
+    <div class="rowContainer">
+        <p class="primaryDefaultColor">Antal vårdtagare där strumppådragare/glidsocka används</p>
+        <div class="rowSubContainer">
+            <app-input [formGroup]="assessmentForm" formName="three2" inputColor="#1688D7"></app-input>
+            <app-input style="visibility: hidden;"></app-input>
+            <app-input style="visibility: hidden;"></app-input>
+            <app-input style="visibility: hidden;"></app-input>
+            <app-input style="visibility: hidden;"></app-input>
+            <app-input style="visibility: hidden;"></app-input>
+        </div>
+    </div>
+
+    <hr class="primary100Border">
+
+    <h2 class="primaryDarkColor">4a. Duschning, tvättning, vård <br> av <strong>sittande</strong> vårdtagare</h2>
+    <div class="rowContainer">
+        <p class="primaryDefaultColor">Antal vårdtagare med behov av stöd vid duschning, tvättning, vård i sittande</p>
+        <div class="rowSubContainer">
+            <app-input [formGroup]="assessmentForm" formName="foura1" inputColor="#1688D7 "></app-input>
+            <app-input style="visibility: hidden;"></app-input>
+            <app-input style="visibility: hidden;"></app-input>
+            <app-input style="visibility: hidden;"></app-input>
+            <app-input style="visibility: hidden;"></app-input>
+            <app-input style="visibility: hidden;"></app-input>
+        </div>
+    </div>
+
+    <div class="rowContainer">
+        <p class="primaryDefaultColor">Antal vårdtagare där höj- och sänkbar sittutrustning används</p>
+        <div class="rowSubContainer">
+            <app-input [formGroup]="assessmentForm" formName="foura2" inputColor="#1688D7"></app-input>
+            <app-input style="visibility: hidden;"></app-input>
+            <app-input style="visibility: hidden;"></app-input>
+            <app-input style="visibility: hidden;"></app-input>
+            <app-input style="visibility: hidden;"></app-input>
+            <app-input style="visibility: hidden;"></app-input>
+        </div>
+    </div>
+
+    <hr class="primary100Border">
+
+    <h2 class="primaryDarkColor">4b. Duschning, tvättning, <br> badning, vård av <strong>liggande</strong> vårdtagare</h2>
+    <div class="rowContainer">
+        <p class="primaryDefaultColor">Antal vårdtagare med behov av stöd vid duschning, tvättning, badning, vård i liggande</p>
+        <div class="rowSubContainer">
+            <app-input [formGroup]="assessmentForm" formName="fourb1" inputColor="#1688D7"></app-input>
+            <app-input style="visibility: hidden;"></app-input>
+            <app-input style="visibility: hidden;"></app-input>
+            <app-input style="visibility: hidden;"></app-input>
+            <app-input style="visibility: hidden;"></app-input>
+            <app-input style="visibility: hidden;"></app-input>
+        </div>
+    </div>
+
+    <div class="rowContainer">
+        <p class="primaryDefaultColor">Antal vårdtagare där höj- och sänkbar arbetsutrustning för liggande vårdtagare används</p>
+        <div class="rowSubContainer">
+            <app-input [formGroup]="assessmentForm" formName="fourb2" inputColor="#1688D7 "></app-input>
+            <app-input style="visibility: hidden;"></app-input>
+            <app-input style="visibility: hidden;"></app-input>
+            <app-input style="visibility: hidden;"></app-input>
+            <app-input style="visibility: hidden;"></app-input>
+            <app-input style="visibility: hidden;"></app-input>
+        </div>
+    </div>
+
+    <hr class="primary100Border">
+
+    <h2 class="primaryDarkColor">5. Antal arbetsutrustning som <br> används på angiven <br> arbetsplats/avdelning</h2>
+    <div class="rowContainer">
+        <p class="primary100Color">Hur många personlyftar används totalt?</p>
+        <div class="rowSubContainer">
+            <app-input [formGroup]="assessmentForm" formName="five1" inputColor="#BADEF6"></app-input>
+            <app-input style="visibility: hidden;"></app-input>
+            <app-input style="visibility: hidden;"></app-input>
+            <app-input style="visibility: hidden;"></app-input>
+            <app-input style="visibility: hidden;"></app-input>
+            <app-input style="visibility: hidden;"></app-input>
+        </div>
+    </div>
+
+    <div class="rowContainer">
+        <p class="primaryDefaultColor">Stå-/uppresningslyft</p>
+        <div class="rowSubContainer">
+            <app-input [formGroup]="assessmentForm" formName="five2" inputColor="#1688D7 "></app-input>
+            <app-input style="visibility: hidden;"></app-input>
+            <app-input style="visibility: hidden;"></app-input>
+            <app-input style="visibility: hidden;"></app-input>
+            <app-input style="visibility: hidden;"></app-input>
+            <app-input style="visibility: hidden;"></app-input>
+        </div>
+    </div>
+
+    <div class="rowContainer">
+        <p class="primaryDefaultColor">Mobillyft</p>
+        <div class="rowSubContainer">
+            <app-input [formGroup]="assessmentForm" formName="five3" inputColor="#1688D7 "></app-input>
+            <app-input style="visibility: hidden;"></app-input>
+            <app-input style="visibility: hidden;"></app-input>
+            <app-input style="visibility: hidden;"></app-input>
+            <app-input style="visibility: hidden;"></app-input>
+            <app-input style="visibility: hidden;"></app-input>
+        </div>
+    </div>
+
+    <div class="rowContainer">
+        <p class="primaryDefaultColor">Taklyft</p>
+        <div class="rowSubContainer">
+            <app-input [formGroup]="assessmentForm" formName="five4" inputColor="#1688D7 "></app-input>
+            <app-input style="visibility: hidden;"></app-input>
+            <app-input style="visibility: hidden;"></app-input>
+            <app-input style="visibility: hidden;"></app-input>
+            <app-input style="visibility: hidden;"></app-input>
+            <app-input style="visibility: hidden;"></app-input>
+        </div>
+    </div>
+
+    <hr class="primary100Border ">
+
+    <label for="extraCommentsTextArea" id="commentsParagraph" class="primaryDefaultColor">Eventuella kommentarer</label>
+    <textarea name="extraCommentsTextArea" id="commentsTextArea" cols="30" rows="10" class="primary100Back primaryDarkColor"></textarea>
+</form>
+
+<div id="bottomContainer">
+    <app-regular-button id="throwButton" btn_text="SLÄNG" btn_color="#1688D7" btn_back="#FFFFFF" btn_border="#1688D7"></app-regular-button>
+    <app-regular-button id="saveButton" btn_text="SPARA" btn_color="#FFFFFF" btn_back="#1688D7"></app-regular-button>
+    <app-regular-button id="signButton" btn_text="SPARA OCH SIGNERA" btn_color="#FFFFFF" btn_back="#EB5757"></app-regular-button>
+</div>

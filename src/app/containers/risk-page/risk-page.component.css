@@ -1,0 +1,94 @@
+    hr {
+        margin-top: 5vh;
+        margin-bottom: 5vh;
+        margin-left: 12.5%;
+    }
+    
+    app-card {
+        border-radius: 6px 6px;
+    }
+    
+    h2 {
+        margin-left: 12.5%;
+    }
+    
+    #mainContainer {
+        width: 75vw;
+        height: 80vh;
+        overflow-y: scroll;
+    }
+    
+     ::-webkit-scrollbar {
+        width: 10px;
+    }
+    
+     ::-webkit-scrollbar-track {
+        -webkit-box-shadow: inset 0 0 6px #FFFFFF;
+        border-radius: 2px;
+    }
+    
+     ::-webkit-scrollbar-thumb {
+        border-radius: 2px;
+        -webkit-box-shadow: 0 0 6px #004894;
+    }
+    
+    ​ #mainTitle {
+        margin-top: 2.5vh;
+    }
+    
+    #titlesContainer {
+        margin-bottom: 5vh;
+    }
+    
+    #commentsParagraph {
+        margin-left: 12.5%;
+    }
+    
+    #commentsTextArea {
+        margin-left: 12.5%;
+        width: 80%;
+        border: none;
+    }
+    
+    #bottomContainer {
+        margin-top: 2vh;
+        margin-bottom: 2vh;
+        height: 5.5vh;
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+    }
+    
+    #throwBottom {
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+    
+    #saveButton {
+        grid-column-start: 7;
+        grid-column-end: 9;
+    }
+    
+    #signButton {
+        grid-column-start: 10;
+        grid-column-end: 13;
+    }
+    
+    .rowContainer {
+        margin-left: 12.5%;
+        margin-top: 5vh;
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .rowContainer p {
+        min-width: 55%;
+        max-width: 55%;
+    }
+    
+    .rowSubContainer {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        column-gap: 2.5%;
+        width: 40%;
+        margin-left: 2.5%;
+    }

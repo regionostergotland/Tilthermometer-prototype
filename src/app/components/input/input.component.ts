@@ -1,4 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
+import { FormGroup } from '@angular/forms';
 
 @Component({
   selector: 'app-input',
@@ -10,6 +11,9 @@ export class InputComponent implements OnInit {
   maxValue: number = 99;
   inputNumber: number = 0;
   @Input() inputColor: string = "#000000"; 
+  @Input() formName: string;
+  @Input() public form: FormGroup;
+
   constructor() { }
 
   ngOnInit(): void {

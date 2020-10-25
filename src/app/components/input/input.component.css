@@ -1,8 +1,10 @@
 div {
     border-radius: 6px 6px;
     border: 2.5px solid #D83000;
-    width: 100px;
-    height: 40px;
+    width: 100%;
+    height: 100%;
+    /* width: 100px;
+    height: 40px; */
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -12,8 +14,9 @@ div {
 div input {
     font-size: 2rem;
     color: #D83000;
-    flex: 4 4 50px;
-    width: 50px;
+    /* flex: 4 4 50px; */
+    flex: 4 4 auto;
+    width: 50%;
     border: none;
     text-align: center;
 }
@@ -31,7 +34,8 @@ input:focus {
 #plusHeader {
     font-size: 2rem;
     color: #D83000;
-    flex: 2 2 25px;
+    /* flex: 2 2 25px; */
+    flex: 2 2 auto;
     text-align: center;
     cursor: pointer;
     margin: auto;
@@ -40,7 +44,8 @@ input:focus {
 #minusHeader {
     font-size: 2rem;
     color: #D83000;
-    flex: 2 2 25px;
+    /* flex: 2 2 25px; */
+    flex: 2 2 auto;
     text-align: center;
     cursor: pointer;
     margin: auto;
