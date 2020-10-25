@@ -1,5 +1,5 @@
-import { Component, OnInit, Input } from '@angular/core';
-import { FormGroup } from '@angular/forms';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
+import { Event } from '@angular/router';
 
 @Component({
   selector: 'app-input',
@@ -9,24 +9,42 @@ import { FormGroup } from '@angular/forms';
 export class InputComponent implements OnInit {
   minValue: number = 0;
   maxValue: number = 99;
-  inputNumber: number = 0;
-  @Input() inputColor: string = "#000000"; 
-  @Input() formName: string;
-  @Input() public form: FormGroup;
+  @Input() public inputNumber: number = 0;
+  @Output() public emittNumber: EventEmitter<number> = new EventEmitter();
+  @Input() public inputColor: string = "#000000"; 
 
-  constructor() { }
+  constructor() { 
 
-  ngOnInit(): void {
   }
 
-  add(): void { 
-    if(this.inputNumber < this.maxValue) {
-      this.inputNumber++;
+  ngOnInit(): void { 
+
+  }
+
+  emittInputNumber() {
+    this.emittNumber.emit(this.inputNumber);
+  }
+
+  validateAndEmitt(): void {
+    if(this.inputNumber <= this.maxValue && this.inputNumber >= this.minValue) {
+      this.emittInputNumber();
+      }
+    else {
+      this.inputNumber = 0;
+      }
+    }
+
+    increment(): void { 
+      if(this.inputNumber < this.maxValue) {
+        this.inputNumber++;
+        this.emittInputNumber();
+      }
+    }
+    decrement(): void {
+      if(this.inputNumber > this.minValue) {
+        this.inputNumber--;
+        this.emittInputNumber();
+      }
     }
   }
-  subtract(): void {
-    if(this.inputNumber > this.minValue) {
-      this.inputNumber--;
-    }
-  }
-}
+

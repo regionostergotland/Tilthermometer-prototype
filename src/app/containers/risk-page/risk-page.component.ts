@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { FormGroup, FormControl } from '@angular/forms';
+import { FormGroup, FormControl, FormBuilder, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-risk-page',
@@ -7,44 +7,92 @@ import { FormGroup, FormControl } from '@angular/forms';
   styleUrls: ['./risk-page.component.css']
 })
 export class RiskPageComponent implements OnInit {
-  assessmentForm = new FormGroup({
-    one1a: new FormControl(),
-    one1b: new FormControl(),
-    one1c: new FormControl(),
-    one1d: new FormControl(),
-    one1e: new FormControl(),
-    one2a: new FormControl(),
-    one2b: new FormControl(),
-    one2c: new FormControl(),
-    one2d: new FormControl(),
-    one2e: new FormControl(),
-    one3c: new FormControl(),
-    one3d: new FormControl(),
-    one3e: new FormControl(),
-    two1c: new FormControl(),
-    two1d: new FormControl(),
-    two1e: new FormControl(),
-    two2c: new FormControl(),
-    two3d: new FormControl(),
-    two3e: new FormControl(),
-    three1: new FormControl(),
-    three2: new FormControl(),
-    foura1: new FormControl(),
-    foura2: new FormControl(),
-    fourb1: new FormControl(),
-    fourb2: new FormControl(),
-    five1: new FormControl(),
-    five2: new FormControl(),
-    five3: new FormControl(),
-    five4: new FormControl(),
-    extra: new FormControl()
-});
 
-  constructor() { }
+  constructor(private formBuilder: FormBuilder) { }
+  assessmentForm = this.formBuilder.group({
+    one1a: ['', Validators.required],
+    one1b: ['', Validators.required],
+    one1c: ['', Validators.required],
+    one1d: ['', Validators.required],
+    one1e: ['', Validators.required],
+    one2a: ['', Validators.required],
+    one2b: ['', Validators.required],
+    one2c: ['', Validators.required],
+    one2d: ['', Validators.required],
+    one2e: ['', Validators.required],
+    one3c: ['', Validators.required],
+    one3d: ['', Validators.required],
+    one3e: ['', Validators.required],
+    two1c: ['', Validators.required],
+    two1d: ['', Validators.required],
+    two1e: ['', Validators.required],
+    two2c: ['', Validators.required],
+    two3d: ['', Validators.required],
+    two3e: ['', Validators.required],
+    three1: ['', Validators.required],
+    three2: ['', Validators.required],
+    foura1: ['', Validators.required],
+    foura2: ['', Validators.required],
+    fourb1: ['', Validators.required],
+    fourb2: ['', Validators.required],
+    five1: ['', Validators.required],
+    five2: ['', Validators.required],
+    five3: ['', Validators.required],
+    five4: ['', Validators.required],
+    extra: ['', Validators.required],
+  });
+
+  inputNames: string[] = [
+    "one1a",
+    "one1b",
+    "one1c",
+    "one1d",
+    "one1e",
+    "one2a",
+    "one2b",
+    "one2c",
+    "one2d",
+    "one2e",
+    "one3c",
+    "one3d",
+    "one3e",
+    "two1c",
+    "two1d",
+    "two1e",
+    "two2c",
+    "two3d",
+    "two3e",
+    "three1",
+    "three2",
+    "foura1",
+    "foura2",
+    "fourb1",
+    "fourb2",
+    "five1",
+    "five2",
+    "five3",
+    "five4",
+    "extra"
+  ]
 
   ngOnInit(): void { }
 
-  submitValues() {
+  changeInputValue(event: number, inputName: string): void {
+    if(this.assessmentForm.contains(inputName))
+    this.assessmentForm.get(inputName).setValue(event);
+  }
+
+  throwValues() {
+    for(let i = 0; i < this.inputNames.length; i++) {
+      this.assessmentForm.get(this.inputNames[i]).setValue(0);
+    }
+  }
+
+  saveValues() {
+
+  }
+
+  saveAndSignValues() {
 
   }
 
