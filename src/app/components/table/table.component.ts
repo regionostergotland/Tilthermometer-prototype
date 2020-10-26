@@ -18,7 +18,6 @@ const ELEMENT_DATA: Assessment[] = [
   {department: 'Ortopeden', done: '2020-08-01', updated: '2020-09-02', status: 'Klar', assessment: 'Statistik'},
 ];
 
-
 @Component({
   selector: 'app-table',
   templateUrl: './table.component.html',

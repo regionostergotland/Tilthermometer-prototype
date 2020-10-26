@@ -1,254 +1,200 @@
-        #mainContainer {
-            width: 75vw;
-            height: 90vh;
-        }
-        
-        h1,
-        h2 {
-            margin-top: 2.5vh;
-        }
-        
-        app-small-card {
-            border-radius: 6px 6px;
-            border: 2.5px solid;
-            font-size: var(--mediumFont);
-        }
-        
-        #contentContainer {
-            display: flex;
-            justify-self: stretch;
-            align-items: stretch;
-            flex-direction: row;
-            height: 82.5%;
-        }
-        
-        #leftContainer {
-            flex: 1 1 100px;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-around;
-            margin-right: 1vw;
-        }
-        
-        #leftContainer app-small-card {
-            flex: 1 1 50px;
-        }
-        
-        #leftContainer #secondBoxHeader {
-            width: 80%;
-            margin-left: 20%;
-        }
-        
-        #firstBoxHeader {
-            border: 2.5px solid;
-            border-radius: 6px 6px;
-        }
-        
-        #leftContainer #thirdBoxHeader,
-        #fourthBoxHeader,
-        #fifthBoxHeader {
-            width: 40%;
-            margin-left: 60%;
-        }
-        
-        #rightContainer {
-            flex: 4 1 400px;
-            min-height: 100%;
-            width: 60%;
-            display: flex;
-            flex-direction: column;
-            justify-content: stretch;
-            align-items: stretch;
-        }
-        
-        #header {
-            flex: 2 2 100px;
-            display: grid;
-            grid-template-columns: repeat(7, 1fr);
-        }
-        
-        #firstHeaderBox {
-            grid-column-start: 1;
-            grid-column-end: 3;
-        }
-        
-        #secondHeaderBox {
-            grid-column-start: 3;
-            grid-column-end: 5;
-        }
-        
-        #thirdHeaderBox {
-            grid-column-start: 5;
-            grid-column-end: 6;
-        }
-        
-        #fourthHeaderBox {
-            grid-column-start: 6;
-            grid-column-end: 7;
-        }
-        
-        #fifthHeaderBox {
-            grid-column-start: 7;
-            grid-column-end: 8;
-        }
-        
-        .headerBox {
-            border: 1px solid #E3F2FB;
-        }
-        
-        .headerBox p {
-            color: #0066B3;
-            margin-left: 5px;
-            margin-top: 5px;
-            width: 48%;
-            height: 100%;
-            display: inline-block;
-            font-size: var(--smallFont);
-        }
-        
-        .headerBox h2 {
-            color: #004894;
-            border-bottom: 1px solid #E3F2FB;
-            margin: auto;
-            margin-left: 5px;
-            margin-top: 5px;
-        }
-        
-        #recommendations {
-            flex: 1 1 50px;
-            display: grid;
-            column-gap: 5px;
-            grid-template-columns: repeat(7, 1fr);
-        }
-        
-        #firstRecCard {
-            grid-column-start: 1;
-            grid-column-end: 2;
-        }
-        
-        #secondRecCard {
-            grid-column-start: 2;
-            grid-column-end: 3;
-        }
-        
-        #thirdRecCard {
-            grid-column-start: 3;
-            grid-column-end: 4;
-        }
-        
-        #fourthRecCard {
-            grid-column-start: 4;
-            grid-column-end: 5;
-        }
-        
-        #fiveRecCard {
-            grid-column-start: 5;
-            grid-column-end: 6;
-        }
-        
-        #sixRecCard {
-            grid-column-start: 6;
-            grid-column-end: 7;
-        }
-        
-        #sevenRecCard {
-            grid-column-start: 7;
-            grid-column-end: 8;
-        }
-        
-        #careStrain {
-            flex: 1 1 50px;
-            display: grid;
-            column-gap: 5px;
-            grid-template-columns: repeat(7, 1fr);
-        }
-        
-        #firstCareCard {
-            grid-column-start: 1;
-            grid-column-end: 3;
-        }
-        
-        #secondCareCard {
-            grid-column-start: 3;
-            grid-column-end: 5;
-        }
-        
-        #thirdCareCard {
-            grid-column-start: 5;
-            grid-column-end: 6;
-        }
-        
-        #fourthCareCard {
-            grid-column-start: 6;
-            grid-column-end: 7;
-        }
-        
-        #fifthCareCard {
-            grid-column-start: 7;
-            grid-column-end: 8;
-        }
-        
-        #cRow {
-            flex: 1 1 50px;
-            display: grid;
-            grid-template-columns: repeat(7, 1fr);
-            column-gap: 5px;
-        }
-        
-        #firstCardC {
-            grid-column-start: 1;
-            grid-column-end: 2;
-        }
-        
-        #secondCardC {
-            grid-column-start: 2;
-            grid-column-end: 3;
-        }
-        
-        #thirdCardC {
-            grid-column-start: 3;
-            grid-column-end: 4;
-        }
-        
-        #dRow {
-            flex: 1 1 50px;
-            display: grid;
-            grid-template-columns: repeat(7, 1fr);
-            column-gap: 5px;
-        }
-        
-        #firstCardD {
-            grid-column-start: 1;
-            grid-column-end: 2;
-        }
-        
-        #secondCardD {
-            grid-column-start: 2;
-            grid-column-end: 3;
-        }
-        
-        #thirdCardD {
-            grid-column-start: 4;
-            grid-column-end: 5;
-        }
-        
-        #eRow {
-            flex: 1 1 50px;
-            display: grid;
-            grid-template-columns: repeat(7, 1fr);
-        }
-        
-        #firstCardE {
-            grid-column-start: 1;
-            grid-column-end: 2;
-        }
-        
-        #secondCardE {
-            grid-column-start: 2;
-            grid-column-end: 3;
-        }
-        
-        #thirdCardE {
-            grid-column-start: 4;
-            grid-column-end: 5;
-        }
+app-card {
+    border-radius: 6px 6px;
+}
+
+p {
+    color: var(--primaryDefault);
+}
+
+#mainContainer {
+    width: 75vw;
+    height: 85vh;
+}
+
+#mainContainer h1 {
+    margin-top: 2.5vh;
+    color: var(--primaryDark);
+}
+
+#mainContainer h2 {
+    margin-top: -2vh;
+    color: var(--primaryDefault);
+}
+
+#contentContainer {
+    min-height: 90%;
+    max-height: 90%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    grid-template-rows: repeat(7, 1fr);
+    column-gap: 15px;
+    row-gap: 25px;
+}
+
+.headerBox {
+    grid-row-start: 1;
+    grid-row-end: 3;
+    border: 2.5px solid var(--primaryLightest);
+}
+
+.headerBox h2 {
+    padding-top: 2.5vh;
+    padding-left: 0.5vw;
+    border-bottom: 2.5px solid var(--primaryLightest);
+}
+
+.headerBox p {
+    padding-left: 2%;
+}
+
+#firstSideHeader {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row: 3;
+    color: #FFFFFF;
+    background: var(--primary400);
+}
+
+#secondSideHeader {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row: 4;
+    color: #FFFFFF;
+    background: var(--primary600);
+}
+
+#thirdSideHeader {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row: 5;
+    color: #FFFFFF;
+    background: var(--C);
+}
+
+#fourthSideHeader {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row: 6;
+    color: #FFFFFF;
+    background: var(--D);
+}
+
+#fifthSideHeader {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row: 7;
+    color: #FFFFFF;
+    background: var(--E);
+}
+
+#firstHeaderBox {
+    grid-column-start: 3;
+    grid-column-end: 5;
+}
+
+#firstHeaderBox p {
+    width: 48%;
+    display: inline-block;
+}
+
+#secondHeaderBox {
+    grid-column-start: 5;
+    grid-column-end: 7;
+}
+
+#secondHeaderBox p {
+    width: 48%;
+    display: inline-block;
+}
+
+#thirdHeaderBox {
+    grid-column-start: 7;
+    grid-column-end: 8;
+}
+
+#fourthHeaderBox {
+    grid-column-start: 8;
+    grid-column-end: 9;
+}
+
+#fifthHeaderBox {
+    grid-column-start: 9;
+    grid-column-end: 10;
+}
+
+.recommendations {
+    grid-row: 3;
+    border: 3.5px solid var(--primary400);
+    color: var(--primary400);
+}
+
+.careStrains {
+    grid-row: 4;
+    border: 3.5px solid var(--primary600);
+    color: var(--primary600);
+}
+
+#firstCareCard {
+    grid-column-start: 3;
+    grid-column-end: 5;
+}
+
+#secondCareCard {
+    grid-column-start: 5;
+    grid-column-end: 7;
+}
+
+.cRowColumn {
+    grid-row: 5;
+    border: 3.5px solid var(--C);
+    color: var(--C);
+}
+
+#firstCardC {
+    grid-column: 3;
+}
+
+#secondCardC {
+    grid-column: 4;
+}
+
+#thirdCardC {
+    grid-column: 5;
+}
+
+.dRowColumn {
+    grid-row: 6;
+    border: 3.5px solid var(--D);
+    color: var(--D);
+}
+
+#firstCardD {
+    grid-column: 3;
+}
+
+#secondCardD {
+    grid-column: 4;
+}
+
+#thirdCardD {
+    grid-column: 6;
+}
+
+.eRowColumn {
+    grid-row: 7;
+    border: 3.5px solid var(--E);
+    color: var(--E);
+}
+
+#firstCardE {
+    grid-column: 3;
+}
+
+#secondCardE {
+    grid-column: 4;
+}
+
+#thirdCardE {
+    grid-column: 6;
+}

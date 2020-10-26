@@ -8,13 +8,17 @@
         border-radius: 6px 6px;
     }
     
+    h1 {
+        margin-top: 2.5vh;
+    }
+    
     h2 {
         margin-left: 12.5%;
     }
     
     #mainContainer {
-        width: 80vw;
-        height: 80vh;
+        width: 75vw;
+        height: 85vh;
         overflow-y: scroll;
     }
     

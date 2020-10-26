@@ -6,6 +6,8 @@ table {
 .mat-cell {
     color: #004894;
     border: none;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
 }
 
 .mat-header-cell {

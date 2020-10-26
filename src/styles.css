@@ -11,6 +11,21 @@ body {
     font-family: Roboto, "Helvetica Neue", sans-serif;
 }
 
+h1 {
+    font-size: var(--largeFont);
+}
+
+h2 {
+    font-size: var(--mediumFont);
+}
+
+div,
+button,
+a,
+p {
+    font-size: var(--smallFont);
+}
+
 
 /* All of the colors used in the prototype, with the corresponding names*/
 
@@ -33,9 +48,9 @@ body {
     --C: #D3AB00;
     --D: #F5911B;
     --E: #D83000;
-    --largeFont: 24px;
-    --mediumFont: 20px;
-    --smallFont: 16px;
+    --largeFont: 28px;
+    --mediumFont: 24px;
+    --smallFont: 20px;
 }
 
 .primaryDarkBack {
