@@ -39,7 +39,7 @@ The components are structured in two folders, containers and components. Contain
 Components contains all of the user defined components, that are used as if they were any other ordinary HTML element. The user defined components are for instance input, card, regular-button, danger-button etc. 
 This application has been developed with heavy inspiration from a Figma prototype that I (Vedran Isak) and my partner (Linda Nordlund) developed prior to me starting developing this project. 
 
-STUFF TO DO:
+## STUFF TO DO:
 
 The HTML layout in the app.component.html file (src/app/app.component.html) can most likely be structed in a more conventional way.
 
