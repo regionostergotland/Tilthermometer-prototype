@@ -40,6 +40,7 @@ Components contains all of the user defined components, that are used as if they
 This application has been developed with heavy inspiration from a Figma prototype that I (Vedran Isak) and my partner (Linda Nordlund) developed prior to me starting developing this project. 
 
 STUFF TO DO:
+
 The HTML layout in the app.component.html file (src/app/app.component.html) can most likely be structed in a more conventional way.
 
 Several of the images used in the application (if not all of them) do not scale at all according to the screen size that the user has.
