@@ -52,3 +52,5 @@ The form layout in the risk-page.component.html file (src/app/containers/risk-pa
 There is no binding to different risk assessments in the stats-overview-page.component.html file (src/app/containers/stats-overview-page/stats-overview-page.component.html). Everything is hardcoded.
 
 There is no user login, so one needs to configure the app to first have a login function and then bind the relevant data to the particular user that is currently using the application. 
+
+There are also, most likely, several minor errors and bugs that I have not been able to find and properly resolve.
