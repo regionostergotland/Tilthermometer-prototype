@@ -41,8 +41,13 @@ This application has been developed with heavy inspiration from a Figma prototyp
 
 STUFF TO DO:
 The HTML layout in the app.component.html file (src/app/app.component.html) can most likely be structed in a more conventional way.
+
 Several of the images used in the application (if not all of them) do not scale at all according to the screen size that the user has.
+
 Media Queries have not been used at all in this project, the responsiveness that is present is mainly achieved through the usage of %, vw, vh and vmin to determine the size of the different components. 
+
 The form layout in the risk-page.component.html file (src/app/containers/risk-page/risk-page.component.html) can possibly be structured in a more conventional way.
+
 There is no binding to different risk assessments in the stats-overview-page.component.html file (src/app/containers/stats-overview-page/stats-overview-page.component.html). Everything is hardcoded.
+
 There is no user login, so one needs to configure the app to first have a login function and then bind the relevant data to the particular user that is currently using the application. 
