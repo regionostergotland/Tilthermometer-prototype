@@ -3,15 +3,23 @@ table {
     height: 80%;
 }
 
+.mat-cell:first-child {
+    font-size: var(--mediumFont);
+    color: var(--primaryDark);
+}
+
 .mat-cell {
-    color: #004894;
     border: none;
+    font-size: var(--smallFont);
+    color: var(--primaryDark);
     padding-top: 1vh;
     padding-bottom: 1vh;
 }
 
 .mat-header-cell {
     border: none;
+    font-size: var(--largeFont);
+    color: var(--primaryDark);
 }
 
 .large-btn {

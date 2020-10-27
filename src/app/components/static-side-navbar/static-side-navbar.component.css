@@ -1,11 +1,15 @@
 #mainCont {
     height: 90vh;
     max-width: 20vw;
-    margin-right: 4.5vw;
+    margin-right: 4vw;
     display: flex;
     flex-direction: row;
     justify-content: stretch;
     align-items: stretch;
+}
+
+#side-navbar {
+    color: var(--primaryDefault);
 }
 
 ul {
@@ -37,8 +41,13 @@ ul li h2 {
     display: none;
 }
 
+.primaryDarkColor {
+    color: var(--primaryDark);
+}
+
 #full-side-navbar {
-    border-right: 1px solid;
+    border-right: 1px solid var(--primaryLightest);
+    color: var(--primaryDefault);
 }
 
 #full-side-navbar ul {

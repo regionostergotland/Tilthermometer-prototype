@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { InfoBarComponent } from './info-bar.component';
+import { LogOutPageComponent } from './log-out-page.component';
 
-describe('InfoBarComponent', () => {
-  let component: InfoBarComponent;
-  let fixture: ComponentFixture<InfoBarComponent>;
+describe('LogOutPageComponent', () => {
+  let component: LogOutPageComponent;
+  let fixture: ComponentFixture<LogOutPageComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ InfoBarComponent ]
+      declarations: [ LogOutPageComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(InfoBarComponent);
+    fixture = TestBed.createComponent(LogOutPageComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

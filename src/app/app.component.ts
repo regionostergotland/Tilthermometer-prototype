@@ -7,6 +7,5 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   public showSideNav:boolean = false;
-
-  toggleShowSideNav() { this.showSideNav =! this.showSideNav; }
+  public hasLoggedOut: boolean = false;
 }

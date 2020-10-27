@@ -7,18 +7,18 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class RegularButtonComponent implements OnInit {
   @Input() public btn_text: string;
-  @Input() public btn_back: string;
-  @Input() public btn_border: string;
-  @Input() public btn_color: string;
+  @Input() public btn_background: string;
+  @Input() public btn_borderColor: string;
+  @Input() public btn_color: string = "#FFFFFF";
 
   constructor() { }
   ngOnInit(): void { }
 
-   getStyle(): Object {
-     return {
-       backgroundColor: this.btn_back,
-       borderColor: this.btn_border,
-       color: this.btn_color
-     };
-   }
+  getStyle() {
+    return {
+      background: this.btn_background,
+      borderColor: this.btn_borderColor,
+      color: this.btn_color
+    };
+  }
 }

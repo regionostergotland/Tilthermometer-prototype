@@ -1,235 +1,234 @@
 <form id="mainContainer" [formGroup]="assessmentForm">
-    <h1 id="mainTitle" class="primaryDarkColor">Avdelning 9</h1>
+    <h1 id="mainTitle">Avdelning 9</h1>
 
     <div id="titlesContainer" class="rowContainer">
         <p style="visibility: hidden;"></p>
         <div id="titlesSubContainer" class="rowSubContainer">
-            <app-card content="S" class="primary600Back whiteColor"></app-card>
-            <app-card content="A" class="ABack whiteColor"></app-card>
-            <app-card content="B" class="BBack whiteColor"></app-card>
-            <app-card content="C" class="CBack whiteColor"></app-card>
-            <app-card content="D" class="DBack whiteColor"></app-card>
-            <app-card content="E" class="EBack whiteColor"></app-card>
+            <app-card id="sCard" content="S"></app-card>
+            <app-card id="aCard" content="A"></app-card>
+            <app-card id="bCard" content="B"></app-card>
+            <app-card id="cCard" content="C"></app-card>
+            <app-card id="dCard" content="D"></app-card>
+            <app-card id="eCard" content="E"></app-card>
         </div>
     </div>
 
-    <h2 class="primaryDarkColor">1. Förflyttning i sidled, högre <br> upp i säng och vändning</h2>
+    <h2>1. Förflyttning i sidled, högre <br> upp i säng och vändning</h2>
     <div class="rowContainer">
-        <p id="caretakersParagraph" class="primaryDefaultColor">Antal vårdtagare i respektive mobilitetsgrupp</p>
+        <p id="caretakersParagraph">Antal vårdtagare i respektive mobilitetsgrupp</p>
         <div id="careTakersContainer" class="rowSubContainer">
             <app-input style="visibility: hidden;"></app-input>
-            <app-input #one1a (emittNumber)='changeInputValue($event, "one1a")' inputColor="#82A10D "></app-input>
-            <app-input #one1b (emittNumber)='changeInputValue($event, "one1b")' inputColor="#B2B602 "></app-input>
-            <app-input #one1c (emittNumber)='changeInputValue($event, "one1c")' inputColor="#D3AB00 "></app-input>
-            <app-input #one1d (emittNumber)='changeInputValue($event, "one1d")' inputColor="#F5911B "></app-input>
-            <app-input #one1e (emittNumber)='changeInputValue($event, "one1e")' inputColor="#D83000 "></app-input>
+            <app-input #one1a (emittNumber)='changeInputValue($event, "one1a")' inputColor="#82A10D"></app-input>
+            <app-input #one1b (emittNumber)='changeInputValue($event, "one1b")' inputColor="#B2B602"></app-input>
+            <app-input #one1c (emittNumber)='changeInputValue($event, "one1c")' inputColor="#D3AB00"></app-input>
+            <app-input #one1d (emittNumber)='changeInputValue($event, "one1d")' inputColor="#F5911B"></app-input>
+            <app-input #one1e (emittNumber)='changeInputValue($event, "one1e")' inputColor="#D83000"></app-input>
         </div>
     </div>
 
-    <div class="rowContainer ">
-        <p class="primaryDefaultColor ">Antal vårdtagare som har elektrisk höj- och sänkbar säng</p>
-        <div class="rowSubContainer ">
-            <app-input inputColor="#1688D7 " style="visibility: hidden; "></app-input>
-            <app-input #one2a (emittNumber)='changeInputValue($event, "one2a")' inputColor="#82A10D "></app-input>
-            <app-input #one2b (emittNumber)='changeInputValue($event, "one2b")' inputColor="#B2B602 "></app-input>
-            <app-input #one2c (emittNumber)='changeInputValue($event, "one2c")' inputColor="#D3AB00 "></app-input>
-            <app-input #one2d (emittNumber)='changeInputValue($event, "one2d")' inputColor="#F5911B "></app-input>
-            <app-input #one2e (emittNumber)='changeInputValue($event, "one2e")' inputColor="#D83000 "></app-input>
+    <div class="rowContainer">
+        <p>Antal vårdtagare som har elektrisk höj- och sänkbar säng</p>
+        <div class="rowSubContainer">
+            <app-input inputColor="#1688D7" style="visibility: hidden;"></app-input>
+            <app-input #one2a (emittNumber)='changeInputValue($event, "one2a")' inputColor="#82A10D"></app-input>
+            <app-input #one2b (emittNumber)='changeInputValue($event, "one2b")' inputColor="#B2B602"></app-input>
+            <app-input #one2c (emittNumber)='changeInputValue($event, "one2c")' inputColor="#D3AB00"></app-input>
+            <app-input #one2d (emittNumber)='changeInputValue($event, "one2d")' inputColor="#F5911B"></app-input>
+            <app-input #one2e (emittNumber)='changeInputValue($event, "one2e")' inputColor="#D83000"></app-input>
         </div>
     </div>
 
-    <div class="rowContainer ">
-        <p class="primaryDefaultColor ">Antal vårdtagare där glid- och annan förflyttningsutrustning används</p>
-        <div class="rowSubContainer ">
-            <app-input style="visibility: hidden; "></app-input>
-            <app-input style="visibility: hidden; "></app-input>
-            <app-input style="visibility: hidden; "></app-input>
-            <app-input #one3c (emittNumber)='changeInputValue($event, "one3c")' inputColor="#D3AB00 "></app-input>
-            <app-input #one3d (emittNumber)='changeInputValue($event, "one3d")' inputColor="#F5911B "></app-input>
-            <app-input #one3e (emittNumber)='changeInputValue($event, "one3e")' inputColor="#D83000 "></app-input>
+    <div class="rowContainer">
+        <p>Antal vårdtagare där glid- och annan förflyttningsutrustning används</p>
+        <div class="rowSubContainer">
+            <app-input style="visibility: hidden;"></app-input>
+            <app-input style="visibility: hidden;"></app-input>
+            <app-input style="visibility: hidden;"></app-input>
+            <app-input #one3c (emittNumber)='changeInputValue($event, "one3c")' inputColor="#D3AB00"></app-input>
+            <app-input #one3d (emittNumber)='changeInputValue($event, "one3d")' inputColor="#F5911B"></app-input>
+            <app-input #one3e (emittNumber)='changeInputValue($event, "one3e")' inputColor="#D83000"></app-input>
         </div>
     </div>
 
-    <hr class="primary100Border ">
+    <hr>
 
-    <h2 class="primaryDarkColor ">2. Förflyttning från och till <br> sittande - stående samt från <br> och till sittande - sittande</h2>
-    <div class="rowContainer ">
-        <p class="primaryDefaultColor ">Antal vårdtagare där stöd vid förflyttning krävs</p>
-        <div class="rowSubContainer ">
-            <app-input style="visibility: hidden; "></app-input>
-            <app-input style="visibility: hidden; "></app-input>
-            <app-input style="visibility: hidden; "></app-input>
-            <app-input #two1c (emittNumber)='changeInputValue($event, "two1c")' inputColor="#D3AB00 "></app-input>
-            <app-input #two1d (emittNumber)='changeInputValue($event, "two1d")' inputColor="#F5911B "></app-input>
-            <app-input #two1e (emittNumber)='changeInputValue($event, "two1e")' inputColor="#D83000 "></app-input>
+    <h2>2. Förflyttning från och till <br> sittande - stående samt från <br> och till sittande - sittande</h2>
+    <div class="rowContainer">
+        <p>Antal vårdtagare där stöd vid förflyttning krävs</p>
+        <div class="rowSubContainer">
+            <app-input style="visibility: hidden;"></app-input>
+            <app-input style="visibility: hidden;"></app-input>
+            <app-input style="visibility: hidden;"></app-input>
+            <app-input #two1c (emittNumber)='changeInputValue($event, "two1c")' inputColor="#D3AB00"></app-input>
+            <app-input #two1d (emittNumber)='changeInputValue($event, "two1d")' inputColor="#F5911B"></app-input>
+            <app-input #two1e (emittNumber)='changeInputValue($event, "two1e")' inputColor="#D83000"></app-input>
         </div>
     </div>
 
-    <div class="rowContainer ">
-        <p class="primaryDefaultColor ">Antal vårdtagare där stå- eller uppresningslyft används</p>
-        <div class="rowSubContainer ">
-            <app-input style="visibility: hidden; "></app-input>
-            <app-input style="visibility: hidden; "></app-input>
-            <app-input style="visibility: hidden; "></app-input>
-            <app-input #two2c (emittNumber)='changeInputValue($event, "two2c")' inputColor="#D3AB00 "></app-input>
-            <app-input style="visibility: hidden; "></app-input>
-            <app-input style="visibility: hidden; "></app-input>
+    <div class="rowContainer">
+        <p>Antal vårdtagare där stå- eller uppresningslyft används</p>
+        <div class="rowSubContainer">
+            <app-input style="visibility: hidden;"></app-input>
+            <app-input style="visibility: hidden;"></app-input>
+            <app-input style="visibility: hidden;"></app-input>
+            <app-input #two2c (emittNumber)='changeInputValue($event, "two2c")' inputColor="#D3AB00"></app-input>
+            <app-input style="visibility: hidden;"></app-input>
+            <app-input style="visibility: hidden;"></app-input>
         </div>
     </div>
 
-    <div class="rowContainer ">
-        <p class="primaryDefaultColor ">Antal vårdtagare där mobil- eller taklyft används</p>
-        <div class="rowSubContainer ">
-            <app-input style="visibility: hidden; "></app-input>
-            <app-input style="visibility: hidden; "></app-input>
-            <app-input style="visibility: hidden; "></app-input>
-            <app-input style="visibility: hidden; "></app-input>
-            <app-input #two3d (emittNumber)='changeInputValue($event, "two3d")' inputColor="#F5911B "></app-input>
-            <app-input #two3e (emittNumber)='changeInputValue($event, "two3e")' inputColor="#D83000 "></app-input>
+    <div class="rowContainer">
+        <p>Antal vårdtagare där mobil- eller taklyft används</p>
+        <div class="rowSubContainer">
+            <app-input style="visibility: hidden;"></app-input>
+            <app-input style="visibility: hidden;"></app-input>
+            <app-input style="visibility: hidden;"></app-input>
+            <app-input style="visibility: hidden;"></app-input>
+            <app-input #two3d (emittNumber)='changeInputValue($event, "two3d")' inputColor="#F5911B"></app-input>
+            <app-input #two3e (emittNumber)='changeInputValue($event, "two3e")' inputColor="#D83000"></app-input>
         </div>
     </div>
 
-    <hr class="primary100Border ">
+    <hr>
 
-    <h2 class="primaryDarkColor ">3. På- och avtagning av stödstrumpor</h2>
-    <div class="rowContainer ">
-        <p class="primaryDefaultColor ">Antal vårdtagare med stödstrumpor</p>
-        <div class="rowSubContainer ">
-            <app-input #three1 #two3d (emittNumber)='changeInputValue($event, "three1")' inputColor="#1688D7 "></app-input>
-            <app-input style="visibility: hidden; "></app-input>
-            <app-input style="visibility: hidden; "></app-input>
-            <app-input style="visibility: hidden; "></app-input>
-            <app-input style="visibility: hidden; "></app-input>
-            <app-input style="visibility: hidden; "></app-input>
+    <h2>3. På- och avtagning av stödstrumpor</h2>
+    <div class="rowContainer">
+        <p>Antal vårdtagare med stödstrumpor</p>
+        <div class="rowSubContainer">
+            <app-input #three1 #two3d (emittNumber)='changeInputValue($event, "three1")' inputColor="#1688D7"></app-input>
+            <app-input style="visibility: hidden;"></app-input>
+            <app-input style="visibility: hidden;"></app-input>
+            <app-input style="visibility: hidden;"></app-input>
+            <app-input style="visibility: hidden;"></app-input>
+            <app-input style="visibility: hidden;"></app-input>
         </div>
     </div>
 
-    <div class="rowContainer ">
-        <p class="primaryDefaultColor ">Antal vårdtagare där strumppådragare/glidsocka används</p>
-        <div class="rowSubContainer ">
-            <app-input #three2 (emittNumber)='changeInputValue($event, "three2")' inputColor="#1688D7 "></app-input>
-            <app-input style="visibility: hidden; "></app-input>
-            <app-input style="visibility: hidden; "></app-input>
-            <app-input style="visibility: hidden; "></app-input>
-            <app-input style="visibility: hidden; "></app-input>
-            <app-input style="visibility: hidden; "></app-input>
+    <div class="rowContainer">
+        <p>Antal vårdtagare där strumppådragare/glidsocka används</p>
+        <div class="rowSubContainer">
+            <app-input #three2 (emittNumber)='changeInputValue($event, " three2 ")' inputColor="#1688D7"></app-input>
+            <app-input style="visibility: hidden;"></app-input>
+            <app-input style="visibility: hidden;"></app-input>
+            <app-input style="visibility: hidden;"></app-input>
+            <app-input style="visibility: hidden;"></app-input>
+            <app-input style="visibility: hidden;"></app-input>
         </div>
     </div>
 
-    <hr class="primary100Border ">
+    <hr>
 
-    <h2 class="primaryDarkColor ">4a. Duschning, tvättning, vård <br> av <strong>sittande</strong> vårdtagare</h2>
-    <div class="rowContainer ">
-        <p class="primaryDefaultColor ">Antal vårdtagare med behov av stöd vid duschning, tvättning, vård i sittande</p>
-        <div class="rowSubContainer ">
-            <app-input #foura1 (emittNumber)='changeInputValue($event, "foura1")' inputColor="#1688D7 "></app-input>
-            <app-input style="visibility: hidden; "></app-input>
-            <app-input style="visibility: hidden; "></app-input>
-            <app-input style="visibility: hidden; "></app-input>
-            <app-input style="visibility: hidden; "></app-input>
-            <app-input style="visibility: hidden; "></app-input>
+    <h2>4a. Duschning, tvättning, vård <br> av <strong>sittande</strong> vårdtagare</h2>
+    <div class="rowContainer">
+        <p>Antal vårdtagare med behov av stöd vid duschning, tvättning, vård i sittande</p>
+        <div class="rowSubContainer">
+            <app-input #foura1 (emittNumber)='changeInputValue($event, "foura1 ")' inputColor="#1688D7"></app-input>
+            <app-input style="visibility: hidden;"></app-input>
+            <app-input style="visibility: hidden;"></app-input>
+            <app-input style="visibility: hidden;"></app-input>
+            <app-input style="visibility: hidden;"></app-input>
+            <app-input style="visibility: hidden;"></app-input>
         </div>
     </div>
 
-    <div class="rowContainer ">
-        <p class="primaryDefaultColor ">Antal vårdtagare där höj- och sänkbar sittutrustning används</p>
-        <div class="rowSubContainer ">
-            <app-input #foura2 (emittNumber)='changeInputValue($event, "foura2")' inputColor="#1688D7 "></app-input>
-            <app-input style="visibility: hidden; "></app-input>
-            <app-input style="visibility: hidden; "></app-input>
-            <app-input style="visibility: hidden; "></app-input>
-            <app-input style="visibility: hidden; "></app-input>
-            <app-input style="visibility: hidden; "></app-input>
+    <div class="rowContainer">
+        <p>Antal vårdtagare där höj- och sänkbar sittutrustning används</p>
+        <div class="rowSubContainer">
+            <app-input #foura2 (emittNumber)='changeInputValue($event, "foura2 ")' inputColor="#1688D7"></app-input>
+            <app-input style="visibility: hidden;"></app-input>
+            <app-input style="visibility: hidden;"></app-input>
+            <app-input style="visibility: hidden;"></app-input>
+            <app-input style="visibility: hidden;"></app-input>
+            <app-input style="visibility: hidden;"></app-input>
         </div>
     </div>
 
-    <hr class="primary100Border ">
+    <hr>
 
-    <h2 class="primaryDarkColor ">4b. Duschning, tvättning, <br> badning, vård av <strong>liggande</strong> vårdtagare</h2>
-    <div class="rowContainer ">
-        <p class="primaryDefaultColor ">Antal vårdtagare med behov av stöd vid duschning, tvättning, badning, vård i liggande</p>
-        <div class="rowSubContainer ">
-            <app-input #fourb1 (emittNumber)='changeInputValue($event, "fourb1")' inputColor="#1688D7 "></app-input>
-            <app-input style="visibility: hidden; "></app-input>
-            <app-input style="visibility: hidden; "></app-input>
-            <app-input style="visibility: hidden; "></app-input>
-            <app-input style="visibility: hidden; "></app-input>
-            <app-input style="visibility: hidden; "></app-input>
+    <h2>4b. Duschning, tvättning, <br> badning, vård av <strong>liggande</strong> vårdtagare</h2>
+    <div class="rowContainer">
+        <p>Antal vårdtagare med behov av stöd vid duschning, tvättning, badning, vård i liggande</p>
+        <div class="rowSubContainer">
+            <app-input #fourb1 (emittNumber)='changeInputValue($event, "fourb1 ")' inputColor="#1688D7"></app-input>
+            <app-input style="visibility: hidden;"></app-input>
+            <app-input style="visibility: hidden;"></app-input>
+            <app-input style="visibility: hidden;"></app-input>
+            <app-input style="visibility: hidden;"></app-input>
+            <app-input style="visibility: hidden;"></app-input>
         </div>
     </div>
 
-    <div class="rowContainer ">
-        <p class="primaryDefaultColor ">Antal vårdtagare där höj- och sänkbar arbetsutrustning för liggande vårdtagare används</p>
-        <div class="rowSubContainer ">
-            <app-input #fourb2 (emittNumber)='changeInputValue($event, "fourb2")' inputColor="#1688D7 "></app-input>
-            <app-input style="visibility: hidden; "></app-input>
-            <app-input style="visibility: hidden; "></app-input>
-            <app-input style="visibility: hidden; "></app-input>
-            <app-input style="visibility: hidden; "></app-input>
-            <app-input style="visibility: hidden; "></app-input>
+    <div class="rowContainer">
+        <p>Antal vårdtagare där höj- och sänkbar arbetsutrustning för liggande vårdtagare används</p>
+        <div class="rowSubContainer">
+            <app-input #fourb2 (emittNumber)='changeInputValue($event, "fourb2 ")' inputColor="#1688D7"></app-input>
+            <app-input style="visibility: hidden;"></app-input>
+            <app-input style="visibility: hidden;"></app-input>
+            <app-input style="visibility: hidden;"></app-input>
+            <app-input style="visibility: hidden;"></app-input>
+            <app-input style="visibility: hidden;"></app-input>
         </div>
     </div>
 
-    <hr class="primary100Border ">
+    <hr>
 
-    <h2 class="primaryDarkColor ">5. Antal arbetsutrustning som <br> används på angiven <br> arbetsplats/avdelning</h2>
-    <div class="rowContainer ">
-        <p class="primary100Color ">Hur många personlyftar används totalt?</p>
-        <div class="rowSubContainer ">
-            <app-input #five1 (emittNumber)='changeInputValue($event, "five1")' inputColor="#BADEF6 "></app-input>
-            <app-input style="visibility: hidden; "></app-input>
-            <app-input style="visibility: hidden; "></app-input>
-            <app-input style="visibility: hidden; "></app-input>
-            <app-input style="visibility: hidden; "></app-input>
-            <app-input style="visibility: hidden; "></app-input>
+    <h2>5. Antal arbetsutrustning som <br> används på angiven <br> arbetsplats/avdelning</h2>
+    <div class="rowContainer">
+        <p>Hur många personlyftar används totalt?</p>
+        <div class="rowSubContainer">
+            <app-input #five1 (emittNumber)='changeInputValue($event, "five1 ")' inputColor="#1688D7"></app-input>
+            <app-input style="visibility: hidden;"></app-input>
+            <app-input style="visibility: hidden;"></app-input>
+            <app-input style="visibility: hidden;"></app-input>
+            <app-input style="visibility: hidden;"></app-input>
+            <app-input style="visibility: hidden;"></app-input>
         </div>
     </div>
 
-    <div class="rowContainer ">
-        <p class="primaryDefaultColor ">Stå-/uppresningslyft</p>
-        <div class="rowSubContainer ">
-            <app-input #five2 (emittNumber)='changeInputValue($event, "five2")' inputColor="#1688D7 "></app-input>
-            <app-input style="visibility: hidden; "></app-input>
-            <app-input style="visibility: hidden; "></app-input>
-            <app-input style="visibility: hidden; "></app-input>
-            <app-input style="visibility: hidden; "></app-input>
-            <app-input style="visibility: hidden; "></app-input>
+    <div class="rowContainer">
+        <p>Stå-/uppresningslyft</p>
+        <div class="rowSubContainer">
+            <app-input #five2 (emittNumber)='changeInputValue($event, "five2 ")' inputColor="#1688D7"></app-input>
+            <app-input style="visibility: hidden;"></app-input>
+            <app-input style="visibility: hidden;"></app-input>
+            <app-input style="visibility: hidden;"></app-input>
+            <app-input style="visibility: hidden;"></app-input>
+            <app-input style="visibility: hidden;"></app-input>
         </div>
     </div>
 
-    <div class="rowContainer ">
-        <p class="primaryDefaultColor ">Mobillyft</p>
-        <div class="rowSubContainer ">
-            <app-input #five3 (emittNumber)='changeInputValue($event, "five3")' inputColor="#1688D7 "></app-input>
-            <app-input style="visibility: hidden; "></app-input>
-            <app-input style="visibility: hidden; "></app-input>
-            <app-input style="visibility: hidden; "></app-input>
-            <app-input style="visibility: hidden; "></app-input>
-            <app-input style="visibility: hidden; "></app-input>
+    <div class="rowContainer">
+        <p>Mobillyft</p>
+        <div class="rowSubContainer">
+            <app-input #five3 (emittNumber)='changeInputValue($event, "five3 ")' inputColor="#1688D7"></app-input>
+            <app-input style="visibility: hidden;"></app-input>
+            <app-input style="visibility: hidden;"></app-input>
+            <app-input style="visibility: hidden;"></app-input>
+            <app-input style="visibility: hidden;"></app-input>
+            <app-input style="visibility: hidden;"></app-input>
         </div>
     </div>
 
-    <div class="rowContainer ">
-        <p class="primaryDefaultColor ">Taklyft</p>
-        <div class="rowSubContainer ">
-            <app-input #five4 (emittNumber)='changeInputValue($event, "five4")' inputColor="#1688D7 "></app-input>
-            <app-input style="visibility: hidden; "></app-input>
-            <app-input style="visibility: hidden; "></app-input>
-            <app-input style="visibility: hidden; "></app-input>
-            <app-input style="visibility: hidden; "></app-input>
-            <app-input style="visibility: hidden; "></app-input>
+    <div class="rowContainer">
+        <p>Taklyft</p>
+        <div class="rowSubContainer">
+            <app-input #five4 (emittNumber)='changeInputValue($event, "five4 ")' inputColor="#1688D7"></app-input>
+            <app-input style="visibility: hidden;"></app-input>
+            <app-input style="visibility: hidden;"></app-input>
+            <app-input style="visibility: hidden;"></app-input>
+            <app-input style="visibility: hidden;"></app-input>
+            <app-input style="visibility: hidden;"></app-input>
         </div>
     </div>
 
-    <hr class="primary100Border ">
+    <hr>
 
-    <label for="extraCommentsTextArea " id="commentsParagraph " class="primaryDefaultColor ">Eventuella kommentarer</label>
-    <textarea name="extraCommentsTextArea " formControlName="extra" id="commentsTextArea" cols="30 " rows="10 " class="primary100Back primaryDarkColor "></textarea>
-    <p>{{ assessmentForm.value | json}}</p>
+    <label for="extraCommentsTextArea" id="commentsParagraph">Eventuella kommentarer</label>
+    <textarea name="extraCommentsTextArea" formControlName="extra" id="commentsTextArea" cols="30" rows="10"></textarea>
 </form>
 
-<div id="bottomContainer ">
-    <app-regular-button id="throwButton " (click)="throwValues()" btn_text="SLÄNG " btn_color="#1688D7 " btn_back="#FFFFFF " btn_border="#1688D7 "></app-regular-button>
-    <app-regular-button id="saveButton " btn_text="SPARA " btn_color="#FFFFFF " btn_back="#1688D7 "></app-regular-button>
-    <app-regular-button id="signButton " btn_text="SPARA OCH SIGNERA " btn_color="#FFFFFF " btn_back="#EB5757 "></app-regular-button>
+<div id="bottomContainer">
+    <app-danger-button id="throwButton" (click)="throwValues()" btn_text="SLÄNG"></app-danger-button>
+    <app-regular-button id="saveButton" btn_text="SPARA" btn_background="#1688D7" btn_borderColor="#1688D7"></app-regular-button>
+    <app-regular-button id="signButton" btn_text="SPARA OCH SIGNERA" btn_background="#1688D7" btn_borderColor="#1688D7"></app-regular-button>
 </div>

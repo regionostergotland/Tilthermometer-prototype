@@ -1,5 +1,5 @@
     mat-toolbar {
-        background-color: #0066B3;
+        background-color: var(--primaryDefault);
         color: #FFFFFF;
         display: flex;
         flex-direction: row;
@@ -20,7 +20,7 @@
     .circle-class {
         border-radius: 100%;
         background: #FFFFFF;
-        color: #004894;
+        color: var(--primaryDark);
         height: 50px;
         width: 50px;
     }
@@ -54,7 +54,7 @@
         box-shadow: 2px 2px 16px #000000;
         position: absolute;
         right: 0.5%;
-        z-index: 9999;
+        z-index: 1;
         background: #FFFFFF;
         display: flex;
         flex-direction: column;
@@ -64,24 +64,25 @@
     
     #userInfo h4 {
         text-transform: uppercase;
-        color: #0066B3;
+        color: var(--primaryDefault);
         margin-top: 5%;
     }
     
     #userInfo h1 {
-        color: #004894;
+        color: var(--primaryDark);
         text-align: left;
         width: 80%;
     }
     
     #userInfo h3 {
-        color: #0A76C5;
+        color: var(--primary700);
         text-align: left;
         width: 80%;
         margin-top: -10px;
     }
     
     #userInfo app-regular-button {
-        width: 80%;
+        width: 90%;
         margin-top: 65%;
+        margin-left: 15%;
     }

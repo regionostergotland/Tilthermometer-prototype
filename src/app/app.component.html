@@ -1,5 +1,5 @@
-<app-static-header-navbar (eventEmitter)="showSideNav=$event"></app-static-header-navbar>
+<app-static-header-navbar *ngIf="!hasLoggedOut" (emitShowSide)="showSideNav=$event" (emitHasLoggedOut)="hasLoggedOut=$event"></app-static-header-navbar>
 <div class="mainContainer">
-    <app-static-side-navbar [showFull]="showSideNav"></app-static-side-navbar>
+    <app-static-side-navbar *ngIf="!hasLoggedOut" [showFull]="showSideNav"></app-static-side-navbar>
     <router-outlet></router-outlet>
 </div>

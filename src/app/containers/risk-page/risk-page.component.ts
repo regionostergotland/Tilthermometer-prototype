@@ -83,6 +83,7 @@ export class RiskPageComponent implements OnInit {
   }
 
   throwValues() {
+    console.log("Throwing values");
     for(let i = 0; i < this.inputNames.length; i++) {
       this.assessmentForm.get(this.inputNames[i]).setValue(0);
     }

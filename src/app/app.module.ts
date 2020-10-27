@@ -15,8 +15,8 @@ import { MenuPageComponent } from './containers/menu-page/menu-page.component';
 import { StatsDepPageComponent } from './containers/stats-dep-page/stats-dep-page.component';
 import { RiskPageComponent } from './containers/risk-page/risk-page.component';
 import { StatsOverviewPageComponent } from './containers/stats-overview-page/stats-overview-page.component';
+import { LogOutPageComponent } from './containers/log-out-page/log-out-page.component';
 
-import { InfoBarComponent } from './components/info-bar/info-bar.component';
 import { TableComponent } from './components/table/table.component';
 import { DangerButtonComponent } from './components/buttons/danger-button/danger-button.component';
 import { RegularButtonComponent } from './components/buttons/regular-button/regular-button.component';
@@ -27,7 +27,8 @@ const pages = [
   RiskPageComponent,
   StatsDepPageComponent,
   StatsOverviewPageComponent,
-  MenuPageComponent
+  MenuPageComponent,
+  LogOutPageComponent
 ];
 
 const staticComponents = [
@@ -40,8 +41,7 @@ const components = [
   DangerButtonComponent,
   RegularButtonComponent,
   InputComponent,
-  CardComponent,
-  InfoBarComponent
+  CardComponent
 ]
 
 @NgModule({

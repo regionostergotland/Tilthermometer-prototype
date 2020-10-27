@@ -6,7 +6,7 @@ import { Component, Input, OnInit } from '@angular/core';
   styleUrls: ['./danger-button.component.css']
 })
 export class DangerButtonComponent implements OnInit {
-   @Input() public buttonText: string;
+   @Input() public btn_text: string;
   constructor() { }
 
   ngOnInit(): void {
