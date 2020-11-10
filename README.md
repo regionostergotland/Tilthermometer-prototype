@@ -1,5 +1,5 @@
 # Project information
-See https://drive.google.com/file/d/1iBqZ6yjztZkzliY3QiZRtbggXFvTrukh/view?usp=sharing for description in Swedish and other files in https://drive.google.com/drive/folders/1NomQMBN7bISZRBNthiBFbYqZw2bsG4Jz?usp=sharing Copies of some of those files are also available in the /documents subdirectory of this GitHub project.
+See https://drive.google.com/file/d/1iBqZ6yjztZkzliY3QiZRtbggXFvTrukh/view?usp=sharing for description in Swedish and other files in https://drive.google.com/drive/folders/1NomQMBN7bISZRBNthiBFbYqZw2bsG4Jz?usp=sharing Copies of some of those files are also available in the /documentation subdirectory of this GitHub project.
 
 The prototyping was preformed as a student project by Linda Nordlund and Vedran Isak on behalf of Region Östergötland.
 
