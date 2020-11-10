@@ -1,4 +1,9 @@
-# Prototype
+# Project information
+See https://drive.google.com/file/d/1iBqZ6yjztZkzliY3QiZRtbggXFvTrukh/view?usp=sharing for description in Swedish and other files in https://drive.google.com/drive/folders/1NomQMBN7bISZRBNthiBFbYqZw2bsG4Jz?usp=sharing Copies of some of those files are also available in the /documents subdirectory of this GitHub project.
+
+The prototyping was preformed as a student project by Linda Nordlund and Vedran Isak on behalf of Region Östergötland.
+
+# Technical prototype
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.0.4.
 This project also used the Angular Material Component Library for some of the user defined components.
